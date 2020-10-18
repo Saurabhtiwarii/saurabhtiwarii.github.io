@@ -12,8 +12,9 @@ html{
 .navbar h2{
 	/* font-family: 'Pacifico', cursive; */
 	font-family: 'Oxygen', cursive;
-	font-size: 2.5rem;
+	font-size: 2.8rem;
 	cursor: pointer;
+	font-weight: bolder;
 	/* color:#d11717; */
 	/* color: #eb2f0e; */
 	color: #eee8e8;
@@ -43,6 +44,14 @@ nav{
 	display: flex;
 	
 }
+/*** Contact Button style*/
+/* .nav_links .link:last-child{
+	border: 1px solid black;
+	padding: 0.5rem;
+	border-radius: 1.5rem;
+	background: #830b0b;
+}  */
+
 .nav_links .link a{
 	text-decoration: none;
 	font-size: 1.4rem;
@@ -239,4 +248,185 @@ box-shadow: -20px 40px 94px -33px rgba(26,25,25,0.68);
 	text-align:center;
 	font-weight: 600;
 	margin: 5rem 1rem;
+}
+/***     Section-3          */
+.section3{
+	height: 90vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background: linear-gradient(to right,#851818,#000000)
+}
+
+.section3 .bars{
+	height: 3rem;
+	width: 40rem;
+	border-radius: 4rem;
+	/* border:1px solid rgb(18, 178, 184); */
+	margin-left: 2rem;
+	background: rgb(117, 219, 223);
+}
+.myskills .skill_icon:not(:last-child){
+	
+	margin-bottom: 2rem;
+}
+.myskills{
+	width: ;
+}
+.skill_icon{
+	display: flex;
+}
+.section3 .myskills img{
+	height: 4rem;
+	widows: 4rem;
+}
+.section3 h2{
+	text-align: center;
+	font-size: 4rem;
+	color: #f5f5f5;
+}
+/***  bar animation*/
+.bars #html{
+	animation: html_anm 1s linear;
+	background:#E44D26;
+	border-radius: 4rem;
+	width:35rem;
+	height: 3rem;
+	
+}
+@keyframes html_anm{
+	0%{
+		width: 0rem;
+	}
+	10%{
+		width: 3.5rem;
+	}
+	20%{
+		width: 7rem;
+	}
+	30%{
+		width: 10.5rem;
+	}
+	40%{
+		width: 14rem;
+	}
+	50%{
+		width: 17.5rem;
+	}
+	60%{
+		width: 20rem;
+	}
+	70%{
+		width: 23.5rem;
+	}
+	80%{
+		width: 27rem;
+	}
+	90%{
+		width: 30.5rem;
+	}
+	100%{
+		width: 35rem;
+	}
+}
+.bars #css{
+	animation: css_anm 1s linear;
+	background:#2062AF;
+	border-radius: 4rem;
+	width:30rem;
+	height: 3rem;
+}
+@keyframes css_anm{
+	0%{
+		width: 0rem;
+	}
+	10%{
+		width: 3rem;
+	}
+	20%{
+		width: 6rem;
+	}
+	30%{
+		width: 9rem;
+	}
+	40%{
+		width: 12rem;
+	}
+	50%{
+		width: 15rem;
+	}
+	60%{
+		width: 18rem;
+	}
+	70%{
+		width: 21rem;
+	}
+	80%{
+		width: 24rem;
+	}
+	90%{
+		width: 27rem;
+	}
+	100%{
+		width: 30rem;
+	}
+}
+
+.bars #javascript{
+	animation: javascript_anm 1s linear;
+	background:#F7DF1E;
+	border-radius: 4rem;
+	width:25rem;
+	height: 3rem;
+}
+@keyframes javascript_anm{
+	0%{
+		width: 0rem;
+	}
+	10%{
+		width: 2.5rem;
+	}
+	20%{
+		width: 5rem;
+	}
+	30%{
+		width: 7.5rem;
+	}
+	40%{
+		width: 10rem;
+	}
+	50%{
+		width: 12.5rem;
+	}
+	60%{
+		width: 15rem;
+	}
+	70%{
+		width: 17.5rem;
+	}
+	80%{
+		width: 20rem;
+	}
+	90%{
+		width: 22.5rem;
+	}
+	100%{
+		width: 25rem;
+	}
+}
+.bars #python{
+	animation: css_anm 1s linear;
+	background:#2BA977;
+	border-radius: 4rem;
+	width:30rem;
+	height: 3rem;
+}
+.bars #c{
+	animation: html_anm 1s linear;
+	background:#2e3a94;
+	border-radius: 4rem;
+	width:35rem;
+	height: 3rem;
 }
