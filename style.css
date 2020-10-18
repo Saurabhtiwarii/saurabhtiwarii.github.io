@@ -288,18 +288,19 @@ box-shadow: -20px 40px 94px -33px rgba(26,25,25,0.68);
 	widows: 4rem;
 }
 .section3 h2{
-	text-align: center;
-	font-size: 5rem;
-	color: #f0ec25;
+	font-size: 4rem;
+	color: #ffffff;
 	font-family: 'Oxygen', sans-serif;
-	border: 0.2rem solid #f0ec25;
-	border-radius: 2.5rem;
-	padding: 2rem 4rem;
+	font-weight: lighter;
+	letter-spacing: 0.1rem;
+	background:#1a1818;
+	border-radius: 3rem;
+	padding: 2rem 6rem;
 }
 @media screen and (max-width:768px){
 	.section3 h2{
 		font-size: 3rem;
-		padding: 2rem 4rem;
+	
 	}
 }
 /***  bar animation*/
