@@ -7,3 +7,7 @@ const nav = ()=> {
 }
 nav();
 
+window.addEventListener('scroll',function(){
+    var navbar = document.querySelector('nav');
+    navbar.classList.toggle('navbarScroll',window.scrollY>0);
+})
