@@ -376,32 +376,51 @@ box-shadow: 14px 25px 38px -13px rgba(15,15,15,0.59);
 #skill-bar1{
 	height: 0.3rem;
 	width: 90%;
-	background: #30c2c7;
-	
+	/* background: #30c2c7; */
+	/* background: linear-gradient(to right,#ED4264,#FFEDBC);
+	 */
+	 background: linear-gradient(to right,#41e28c,#f5ee33);
+
+	animation: baranimate 3s ease;
+}
+@keyframes baranimate{
+	from{
+		width: 0%;
+	}
+	to{
+		width: 90%;
+	}
 }
 #skill-bar2{
 	height: 0.3rem;
 	width: 75%;
-	background: #30c2c7;
+	/* background: #30c2c7; */
+	background: linear-gradient(to right,#41e28c,#f5ee33);
+	/* animation: baranimate 3s ease; */
 	
 }
 #skill-bar3{
 	height: 0.3rem;
 	width: 55%;
-	background: #30c2c7;
+	/* background: #30c2c7; */
+	background: linear-gradient(to right,#41e28c,#f5ee33);
+	/* animation: baranimate 3s ease; */
 	
 }
 #skill-bar4{
 	height: 0.3rem;
 	width: 70%;
-	background: #30c2c7;
+	/* background: #30c2c7; */
+	background: linear-gradient(to right,#41e28c,#f5ee33);
+	/* animation: baranimate 3s ease; */
 	
 }
 #skill-bar5{
 	height: 0.3rem;
 	width: 80%;
-	background: #30c2c7;
-	
+	/* background: #30c2c7; */
+	background: linear-gradient(to right,#41e28c,#f5ee33);
+	/* animation: baranimate 3s ease; */
 }
 @media screen and (max-width:768px){
 	.skills{
@@ -476,7 +495,7 @@ box-shadow: 14px 25px 38px -13px rgba(15,15,15,0.59);
 	font-family: "Oxygen",sans-serif;
 	font-size: 3rem;
 	background-color: #141414;
-	color: #aca7ac;
+	color: #d3d2d3;
 	padding: 1rem 0;
 }
 
