@@ -7,7 +7,6 @@
 }
 html{
 	font-size: 62.5%;
-	
 }
 /*** navbar scroll class */
 .navbarScroll .navbar h2{
@@ -65,7 +64,7 @@ nav{
 	align-items: center;
 	justify-content: center;
 	background:#2e2c2c;
-	position: fixed;
+	position: sticky;
 	top: 0;
 	left: 0;
 	z-index: 1000;
@@ -102,7 +101,7 @@ nav{
 	color:#d11717 ;
 }
 .welcome{
-	height: 100vh;
+	height: 90vh;
 	width: 100vw;
 	/* background: linear-gradient(60deg, #8d25f5 40%,#c642ff) */
 	background-image: url(image/bg1.png);
@@ -116,7 +115,7 @@ nav{
 	position: absolute;
 	top:0px;
 	left:0px;
-	height: 100vh;
+	height: 90vh;
 	width: 100vw;
 	background-color: #000000;
 	opacity: 0.7;
@@ -251,10 +250,11 @@ nav{
 }
 /* ** Responsive close*/
 /*? Animation */
-.welcome .section1 p span{
-	animation: fade 1s forwards;
+/* .welcome .section1 p span{
+	animation: fade 1s forwards 1s;
 	display: inline-block;
 	transform: rotate(90deg);
+
 }
 @keyframes fade{
 	from{
@@ -263,9 +263,9 @@ nav{
 	}
 	to{
 		transform: rotate(180deg);
-
+		color: #d11717;
 	}
-}
+} */
 /*? Animation close */
 
 
@@ -273,7 +273,7 @@ nav{
 .section2{
 	height: auto;
 	width: 100vw;
-	background: linear-gradient(to bottom, #131212, #312f2f);
+	background: linear-gradient(to bottom, #111010, #222121);
 	padding: 3rem;
 	
 }
@@ -293,7 +293,7 @@ nav{
 }
 .section2 p{
 	font-family: 'Oxygen',sans-serif;
-	font-size: 3vh;
+	font-size: 2rem;
 	color: #d11717;
 	font-weight: 400;
 	margin-bottom: 3rem;
@@ -316,7 +316,7 @@ nav{
 /**------------Section-3 ------------------->*/
 .section3{
 	width: 100vw;
-	height: 80vh;
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -335,6 +335,7 @@ nav{
 .skills{
 	width: 60%;
 	height: auto;
+	margin: 6rem 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -410,3 +411,79 @@ box-shadow: 14px 25px 38px -13px rgba(15,15,15,0.59);
 }
 
 /**------------Section3 close-------------------->*/
+
+/**------------Section4-------------------->*/
+.section4{
+	min-height: 100vh;
+	width: 100vw;
+	background-image: url(image/section4bg.png);
+	background-size: 100%;
+	background-repeat:zoom;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* z-index: 0; */
+
+	
+	
+	
+}
+.projects{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	/* z-index: 1; */
+
+}
+.pr{
+	width: 30rem;
+	height: 20rem;
+	
+	margin: 3rem;
+	box-shadow: 0px 10px 20px #181717;
+	position: relative;
+	z-index: 2;
+	
+	
+}
+.pr::before{
+	content: "";
+	width: 30rem;
+	height: 20rem;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: rgb(0, 0, 0,0.5);
+	font-size: 1;
+	z-index: -1;
+	border: 1px solid #696767;
+	
+}
+.project_title{
+	font-size: 1.5rem;
+	color: #ebeeee;
+	font-family: "Oxygen",sans-serif;
+	text-align: center;
+	font-weight: lighter;
+	padding: 1rem 0;
+	
+	
+}
+.projects h1{
+	width: 100%;
+	text-align: center;
+	margin: 2rem 0;
+	font-family: "Oxygen",sans-serif;
+	font-size: 3rem;
+	background-color: #141414;
+	color: #aca7ac;
+	padding: 1rem 0;
+}
+
+
+
+
+
+
+
+/**------------Section4 close-------------------->*/
