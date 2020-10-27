@@ -54,15 +54,15 @@ html{
 .navbar h2{
 	/* font-family: 'Pacifico', cursive; */
 	font-family: 'Permanent Marker', cursive;
-	background:linear-gradient(to right, #e41642,#ee4527);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	/* background:linear-gradient(to right, #e41642,#ee4527); */
+	/* -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; */
 	font-size: 3rem;
 	cursor: pointer;
 	font-weight: lighter;
 	/* color:#d11717; */
 	/* color: #eb2f0e; */
-	/* color: #eee8e8; */
+	color: #eee8e8;
 	line-height: 7rem;
 
 	/* color: #f5f5f5; */
