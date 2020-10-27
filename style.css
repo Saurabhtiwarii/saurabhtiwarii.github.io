@@ -10,51 +10,63 @@ html{
 }
 /*** navbar scroll class */
 .navbarScroll .navbar h2{
-	font-family: 'Oxygen', sans-serif;
-	font-size: 2.8rem;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 3.5rem;
 	cursor: pointer;
-	font-weight: 700;
+	font-weight: lighter;
+	background:linear-gradient(to right, #e41642,#ee4527);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	/* color:#d11717; */
 	/* color: #eb2f0e; */
-	color: #d11717;
+	/* color: #ce3d3d; */
 	/* color: #f5f5f5; */
-	letter-spacing: 0.1rem;
-	transition: color 1s;
+	letter-spacing: 0.3rem;
+	transition: background 1s ease;
 }
 .navbarScroll .navbar .nav_links .link a{
 	text-decoration: none;
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 	margin: 1.5rem;
-	font-family: 'Raleway', sans-serif;
-	color: #d11717;
+	font-family: 'Oxygen', sans-serif;
+	color: #f0ecec;
 	letter-spacing: 2px;
 	transition: color 1s;
 }
+.navbarScroll .navbar .nav_links .link a:hover{
+	color: #d11717;
+}
 
 .navbarScroll{
-	background: #1a1919;
-	transition: background 1s;	
+	background-color: #1f1d1d;
+	transition:1s ease-in;
+	 transition-property:border-bottom;
 	border-bottom: 0.3rem solid #eee8e8;
 }
 .navbarScroll .navbar .hamburger .line{
-	background: #d11717;
+	/* background: #d11717; */
+	transition: 1s;
+	background:linear-gradient(to right, #e41642,#ee4527);
 }
 /*** NavbarScroll Close*/
 
 
 .navbar h2{
 	/* font-family: 'Pacifico', cursive; */
-	font-family: 'Oxygen', cursive;
-	font-size: 2.8rem;
+	font-family: 'Permanent Marker', cursive;
+	background:linear-gradient(to right, #e41642,#ee4527);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 3.5rem;
 	cursor: pointer;
-	font-weight: 700;
+	font-weight: lighter;
 	/* color:#d11717; */
 	/* color: #eb2f0e; */
-	color: #eee8e8;
+	/* color: #eee8e8; */
 	line-height: 7rem;
 
 	/* color: #f5f5f5; */
-	letter-spacing: 0.1rem;
+	letter-spacing: 0.3rem;
 }
 nav{
 	width: 100vw;
@@ -63,7 +75,7 @@ nav{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background:#2e2c2c;
+	background:#262627;
 	position: sticky;
 	top: 0;
 	left: 0;
@@ -91,10 +103,11 @@ nav{
 
 .nav_links .link a{
 	text-decoration: none;
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 	margin: 1.5rem;
-	font-family: 'Raleway', sans-serif;
-	color: #f5f5f5;
+	font-family: 'Oxygen', sans-serif;
+	color: #f0ecec;
+	font-weight: bold;
 	letter-spacing: 2px;
 }
 .nav_links .link a:hover{
@@ -106,8 +119,8 @@ nav{
 	/* background: linear-gradient(60deg, #8d25f5 40%,#c642ff) */
 	background-image: url(image/bg1.png);
 	background-size: cover;
-	/* background-attachment: fixed;
-	scroll-snap-type: mandatory; */
+	background-attachment: fixed;
+	scroll-snap-type: mandatory;
 	position: relative;
 }
 .welcome::after{
@@ -183,6 +196,7 @@ nav{
 	flex-direction: column;
 	align-items: center;
 	justify-content:center ;
+
 	
 		
 }
