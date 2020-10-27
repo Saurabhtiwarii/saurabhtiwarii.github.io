@@ -11,7 +11,7 @@ html{
 /*** navbar scroll class */
 .navbarScroll .navbar h2{
 	font-family: 'Permanent Marker', cursive;
-	font-size: 3.5rem;
+	font-size: 3rem;
 	cursor: pointer;
 	font-weight: lighter;
 	background:linear-gradient(to right, #e41642,#ee4527);
@@ -57,7 +57,7 @@ html{
 	background:linear-gradient(to right, #e41642,#ee4527);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	font-size: 3.5rem;
+	font-size: 3rem;
 	cursor: pointer;
 	font-weight: lighter;
 	/* color:#d11717; */
