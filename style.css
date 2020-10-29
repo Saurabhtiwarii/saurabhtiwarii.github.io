@@ -11,9 +11,13 @@ html{
 /*** navbar scroll class */
 .navbarScroll .navbar h2{
 	font-family: 'Permanent Marker', cursive;
-	font-size: 4rem;
+	/* font-family: 'Courgette', cursive; */
+	/* font-family: 'Sansita Swashed', cursive; */
+
+
+	font-size: 3.2rem;
 	cursor: pointer;
-	font-weight: lighter;
+	font-weight:  500;
 	background:linear-gradient(to right, #e41642,#ee4527);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -27,7 +31,7 @@ html{
 .navbarScroll .navbar .nav_links .link a{
 	text-decoration: none;
 	font-size: 1.5rem;
-	margin: 1.5rem;
+	margin: 1rem;
 	font-family: 'Oxygen', sans-serif;
 	color: #f0ecec;
 	letter-spacing: 2px;
@@ -54,14 +58,15 @@ html{
 
 
 .navbar h2{
-	/* font-family: 'Pacifico', cursive; */
+	/* font-family: 'Sansita Swashed', cursive; */
+	/* font-family: 'Kalam', cursive; */
 	font-family: 'Permanent Marker', cursive;
 	/* background:linear-gradient(to right, #e41642,#ee4527); */
 	/* -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent; */
-	font-size: 4rem;
+	font-size: 3.2rem;
 	cursor: pointer;
-	font-weight: lighter;
+	font-weight: 500;
 	/* color:#d11717; */
 	/* color: #eb2f0e; */
 	color: #eee8e8;
@@ -94,7 +99,7 @@ nav::after{
 	height: 100%;
 	width: 100%;
 	background: rgb(22, 22, 22);
-	opacity: 0.6;
+	opacity: 0.5;
 	z-index: -1;
 }
 .navbar{
@@ -120,7 +125,8 @@ nav::after{
 .nav_links .link a{
 	text-decoration: none;
 	font-size: 1.5rem;
-	
+	margin: 1rem;
+
 	font-family: 'Oxygen', sans-serif;
 	color: #f0ecec;
 	font-weight: bold;
@@ -151,7 +157,7 @@ nav::after{
 	height: 100vh;
 	width: 100vw;
 	background-color: #000000;
-	opacity: 0.78;
+	opacity: 0.64;
 }
 /*** Hamburger*/
 .hamburger div{
