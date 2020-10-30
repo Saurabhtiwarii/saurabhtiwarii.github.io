@@ -50,10 +50,22 @@ html{
 	background-image: inherit;
 	position: fixed;
 }
+.navbarScroll .navbar .hamburger .line:nth-child(1){
+	width: 35px;
+	height: 3px;
+}
+.navbarScroll .navbar .hamburger .line:nth-child(2){
+	width: 25px;
+	height: 3px;
+}
+.navbarScroll .navbar .hamburger .line:nth-child(3){
+	width: 14px;
+	height: 3px;
+}
 .navbarScroll .navbar .hamburger .line{
 	/* background: #d11717; */
 	transition: 1s;
-	background:linear-gradient(to right, #e41642,#ee4527);
+	background:linear-gradient(to right,#e41818,#fd7333);
 }
 /*** NavbarScroll Close*/
 
@@ -134,7 +146,7 @@ nav{
 	/* margin: 1rem; */
 	font-family: 'Oxygen', sans-serif;
 	color: #f0ecec;
-	font-weight: 400;
+	font-weight: 700;
 	letter-spacing: 2px;
 }
 .nav_links .link a:hover{
@@ -172,9 +184,21 @@ nav{
 }
 /*** Hamburger*/
 .hamburger div{
+	/* width: 25px;
+	height: 3px; */
+	background-color: ivory;
+}
+.hamburger .line:nth-child(1){
+	width: 35px;
+	height: 3px;
+}
+.hamburger .line:nth-child(2){
 	width: 25px;
 	height: 3px;
-	background-color: ivory;
+}
+.hamburger .line:nth-child(3){
+	width: 15px;
+	height: 3px;
 }
 .hamburger div:not(:last-child){
 	margin-bottom: 5px;
