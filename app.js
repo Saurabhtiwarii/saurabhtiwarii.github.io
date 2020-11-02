@@ -13,5 +13,5 @@ window.addEventListener('scroll',function(){
 })
 
 ScrollOut({
-    targets : 'section,div,#skill-bar1'
+    targets : 'section,div,button,a,nav'
 })

@@ -291,7 +291,7 @@ nav{
 } 
 .welcome .section1 h2 span{
 	color: #d11717;
-	display: inline-block;
+	display:block-block;
 	animation: name-animation1 1s forwards;
 } 
 @keyframes name-animation1{
@@ -463,10 +463,15 @@ box-shadow: 14px 25px 38px -13px rgba(15,15,15,0.59);
 	/* background: linear-gradient(to right,#ED4264,#FFEDBC);
 	 */
 	background: linear-gradient(to right,#41e28c,#f5ee33);
-	transition: 5s ease;
+	
+}
+div[data-scroll="out"] #skill-bar1{
+	width: 0%;
+	transition: 1s ease;
 }
 div[data-scroll="in"] #skill-bar1{
 	width: 85%;
+	transition: 5s ease;
 }
 
 /* @keyframes baranimate{
@@ -483,12 +488,16 @@ div[data-scroll="in"] #skill-bar1{
 	/* background: #30c2c7; */
 	background: linear-gradient(to right,#41e28c,#f5ee33);
 	/* animation: baranimate 3s ease; */
-	transition: 5s ease;
 	
+	
+}
+div[data-scroll="out"] #skill-bar2{
+	width: 0%;
+	transition: 1s ease;
 }
 div[data-scroll="in"] #skill-bar2{
 	width: 75%;
-	
+	transition: 5s ease;
 }
 #skill-bar3{
 	height: 0.3rem;
@@ -498,8 +507,13 @@ div[data-scroll="in"] #skill-bar2{
 	/* animation: baranimate 3s ease; */
 	transition: 5s ease;
 }
+div[data-scroll="out"] #skill-bar3{
+	width: 0%;
+	transition: 1s ease;
+}
 div[data-scroll="in"] #skill-bar3{
 	width: 55%;
+	transition: 5s ease;
 }
 #skill-bar4{
 	height: 0.3rem;
@@ -507,11 +521,16 @@ div[data-scroll="in"] #skill-bar3{
 	/* background: #30c2c7; */
 	background: linear-gradient(to right,#41e28c,#f5ee33);
 	/* animation: baranimate 3s ease; */
-	transition: 5s ease;
 	
+	
+}
+div[data-scroll="out"] #skill-bar4{
+	width: 0%;
+	transition: 1s ease;
 }
 div[data-scroll="in"] #skill-bar4{
 	width: 70%;
+	transition: 5s ease;
 }
 #skill-bar5{
 	height: 0.3rem;
@@ -519,10 +538,15 @@ div[data-scroll="in"] #skill-bar4{
 	/* background: #30c2c7; */
 	background: linear-gradient(to right,#41e28c,#f5ee33);
 	/* animation: baranimate 3s ease; */
-	transition: 5s ease;
+	
+}
+div[data-scroll="out"] #skill-bar5{
+	width: 0%;
+	transition: 1s ease;
 }
 div[data-scroll="in"] #skill-bar5{
 	width: 80%;
+	transition: 5s ease;
 }
 @media screen and (max-width:768px){
 	.skills{
@@ -633,3 +657,54 @@ div[data-scroll="in"] #skill-bar5{
 
 
 /**------------Section4 close-------------------->*/
+
+/**-------------Scroll up -----------------*/
+#scroll_up{
+	display:none;
+}
+nav[data-scroll = "out"] #scroll_up{
+	position: fixed;
+	z-index: 10;
+	display: block;
+	bottom: 10%;
+	right: 3%;
+	background:linear-gradient(to right, #f50d3f,#f33514);
+	
+	width: 4rem;
+	height: 4rem;
+	border:none;
+	/* border-radius: 50%; */
+	outline: none;
+	cursor: pointer;
+	font-family: "Oxygen",sans-serif;
+	font-size: 1.8rem;
+	font-weight: 700;
+	color: #f0ecec;
+	animation: scroll_upanm 1.5s forwards;
+	letter-spacing: 0.3rem;
+	line-height: 4rem;
+	text-align: center;
+	opacity: 0.8;
+	
+}
+
+@keyframes scroll_upanm{
+	 0%{
+	height: 0;
+	background:linear-gradient(to right, #e41642,#ee4527);
+	
+	}
+	30%{
+	
+	height: 4rem;
+	border-radius: 50%;
+	
+	} 
+	100%{
+		border-radius: 0;
+	}
+
+}
+nav #scroll_up:hover,section #scroll_up:focus{
+	opacity: 1;
+}
