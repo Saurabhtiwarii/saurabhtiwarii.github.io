@@ -628,12 +628,11 @@ div[data-scroll="in"] #skill-bar5{
 .pr{
 	width: 30rem;
 	height: 20rem;
-	
 	margin: 3rem;
 	box-shadow: 0px 10px 20px #181717;
 	position: relative;
 	z-index: 2;
-	
+	cursor:pointer;
 	
 }
 .pr::before{
@@ -644,10 +643,12 @@ div[data-scroll="in"] #skill-bar5{
 	top: 0px;
 	left: 0px;
 	background: rgb(0, 0, 0,0.5);
-	font-size: 1;
-	z-index: -1;
 	border: 1px solid #696767;
+	z-index: -1;
 	
+}
+.pr:hover::before{
+	border: 1px solid #d11717;
 }
 .project_title{
 	font-size: 1.5rem;
@@ -695,10 +696,83 @@ div[data-scroll="in"] #skill-bar5{
 	background: #141414;
 	opacity: 0.34;
 	z-index: 0;
-
+}
+/* .project1:hover{
+	position:fixed;
+	top:10%;
+	left: 10%;
+	display:inline-block;
+	width: 80vw;
+	height: 80vh;
+	background: #222121;
+	z-index:100;
+	transition: 1s ease;
+	margin: auto;
+} */
+/* .project1:hover::before{
+	position:absolute;
+	top:0;
+	left: 0;
+	display: block;
+	width: 80vw;
+	height: 80vh;
+	transition: 1s ease;
+	display: none;
+	background: rgb(0, 0, 0,1);
+} */
+.project1_open{
+	display: none;
+}
+.open_sec1 .project1_open{
+	position:fixed;
+	top:19%;
+	left: 0;
+	right: 0;
+	display:flex;
+	width: 80%;
+	height: 70vh;
+	background: #1f1e1e;
+	z-index:10000;
+	/* transition: 1s ease; */
+	pointer-events: none;
+	margin: 0 auto;
+	justify-content: center;
+	border-bottom: 4rem solid #ece8e8;
+	border-top: 1px solid #ece8e8;
+	border-left: 1px solid #ece8e8;
+	border-right: 1px solid #ece8e8;
 }
 
-
+.open_sec1{
+	z-index: 10;
+	pointer-events: none;
+}
+.project1_open .close_btn1{
+	position: absolute;
+	right: 2%;
+	top: 2%;
+}
+.close_btn1 .far{
+	color: #e6e3e3;
+}
+.close_btn1 .far:hover{
+	color: #d11717;
+}
+.project1_open h2{
+	font-family: "Oxygen",sans-serif;
+	color: #e6e3e3;
+	font-size: 3rem;
+	margin: 3rem;
+	background:linear-gradient(to right, #e91f4b,#e94528);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+/* .open_sec1::before{
+	display: none;
+} */
+.project1_open .close_btn1{
+	pointer-events: visible;
+}
 
 
 
@@ -720,7 +794,7 @@ nav[data-scroll = "out"] #scroll_up{
 	height: 4rem;
 	border:none;
 	/* border-radius: 50%; */
-	outline: none;
+	
 	cursor: pointer;
 	font-family: "Oxygen",sans-serif;
 	font-size: 1.8rem;
@@ -731,6 +805,7 @@ nav[data-scroll = "out"] #scroll_up{
 	line-height: 4rem;
 	text-align: center;
 	opacity: 0.6;
+	
 	
 }
 
@@ -750,7 +825,7 @@ nav[data-scroll = "out"] #scroll_up{
 	}
 
 }
-nav #scroll_up:hover,section #scroll_up:focus{
+nav #scroll_up:hover{
 	opacity: 1;
 }
 
