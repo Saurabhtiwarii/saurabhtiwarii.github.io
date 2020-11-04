@@ -183,8 +183,8 @@ nav{
 	/* background: linear-gradient(60deg, #8d25f5 40%,#c642ff) */
 	background-image: url(image/bg1.png);
 	background-size: cover;
-	background-attachment: fixed;
-	scroll-snap-type: mandatory;
+	/* background-attachment: fixed;
+	scroll-snap-type: mandatory; */
 	position: relative;
 }
 .welcome::after{
