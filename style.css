@@ -4,7 +4,12 @@
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 	
+	
 }
+::selection {
+	color: #d11717;
+	background:#eeeded;
+  }
 html{
 	font-size: 62.5%;
 }
@@ -732,7 +737,7 @@ div[data-scroll="in"] #skill-bar5{
 	width: 80%;
 	height: 70vh;
 	background: #1f1e1e;
-	z-index:10000;
+	z-index:1000;
 	/* transition: 1s ease; */
 	pointer-events: none;
 	margin: 0 auto;
@@ -744,7 +749,7 @@ div[data-scroll="in"] #skill-bar5{
 }
 
 .open_sec1{
-	z-index: 10;
+	z-index: 1000;
 	pointer-events: none;
 }
 .project1_open .close_btn1{
