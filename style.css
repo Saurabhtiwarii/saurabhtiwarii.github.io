@@ -240,7 +240,7 @@ nav{
 		transition: transform 0.45s ease-in;
 		margin:0;
 		align-items: center;
-		z-index: 30;
+		z-index: 100;
 	}
 	.nav_links::before{
 		content: " ";
@@ -638,7 +638,9 @@ div[data-scroll="in"] #skill-bar5{
 	position: relative;
 	z-index: 2;
 	cursor:pointer;
+	border-radius:50% ;
 	
+
 }
 .pr::before{
 	content: "";
@@ -647,23 +649,35 @@ div[data-scroll="in"] #skill-bar5{
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	background: rgb(0, 0, 0,0.5);
-	border: 1px solid #696767;
+	background: radial-gradient(circle,rgb(63, 64, 65)  0%, rgb(22, 22, 22) 100%);
+	opacity: 0.6;
+	border: 0.5px solid #f0eded;
+	border-radius:4% ;
 	z-index: -1;
 	
 }
 .pr:hover::before{
 	border: 1px solid #d11717;
+	background: radial-gradient(circle,rgb(52, 52, 53)  0%, rgb(8, 8, 8) 100%);
+}
+@media screen and (max-width:500px){
+	.pr{
+		width: 25rem;
+		height: 16rem;
+	}
+	.pr::before{
+		width: 25rem;
+		height: 16rem;
+	}
 }
 .project_title{
 	font-size: 1.5rem;
 	color: #ebeeee;
 	font-family: "Oxygen",sans-serif;
 	text-align: center;
-	font-weight: lighter;
+	font-weight:400;
 	padding: 1rem 0;
-	
-	
+	letter-spacing: .5px;	
 }
 .portfolio h1{
 	/* width: 100%; */
@@ -725,10 +739,28 @@ div[data-scroll="in"] #skill-bar5{
 	display: none;
 	background: rgb(0, 0, 0,1);
 } */
+/*!! Close Button */
+.close_btn1 .far{
+	color: #e6e3e3;
+}
+.close_btn1 .far:hover{
+	color: #d11717;
+}
+.close_btn1{
+	position: absolute;
+	right: 3%;
+	top: 3%;
+}
+.close_btn1{
+	pointer-events: visible;
+}
+/*!--------------------------*/
+/** Project1 active */
 .project1_open{
 	display: none;
 }
-.open_sec1 .project1_open{
+
+.pr1_active .project1 .project1_open{
 	position:fixed;
 	top:19%;
 	left: 0;
@@ -737,32 +769,23 @@ div[data-scroll="in"] #skill-bar5{
 	width: 80%;
 	height: 70vh;
 	background: #1f1e1e;
-	z-index:1000;
+	z-index:100;
 	/* transition: 1s ease; */
 	pointer-events: none;
 	margin: 0 auto;
 	justify-content: center;
-	border-bottom: 4rem solid #ece8e8;
-	border-top: 1px solid #ece8e8;
-	border-left: 1px solid #ece8e8;
-	border-right: 1px solid #ece8e8;
+	border-bottom: 3px solid #ece8e8;
+	border-top:3px solid #ece8e8;
+	border-left:3px solid #ece8e8;
+	border-right:3px solid #ece8e8;
 }
 
-.open_sec1{
-	z-index: 1000;
+.pr1_active .project1{
+	z-index: 100;
 	pointer-events: none;
 }
-.project1_open .close_btn1{
-	position: absolute;
-	right: 2%;
-	top: 2%;
-}
-.close_btn1 .far{
-	color: #e6e3e3;
-}
-.close_btn1 .far:hover{
-	color: #d11717;
-}
+
+
 .project1_open h2{
 	font-family: "Oxygen",sans-serif;
 	color: #e6e3e3;
@@ -771,16 +794,262 @@ div[data-scroll="in"] #skill-bar5{
 	background:linear-gradient(to right, #e91f4b,#e94528);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	font-style: italic ;
 }
 /* .open_sec1::before{
 	display: none;
 } */
-.project1_open .close_btn1{
-	pointer-events: visible;
+
+.pr1_active .project2, 
+.pr1_active .project3,
+.pr1_active .project4,
+.pr1_active .project5,
+.pr1_active .project6{
+	pointer-events: none;
+}
+/*** Project 2 active */
+.project2_open{
+	display: none;
+}
+.pr2_active .project2 .project2_open{
+	position:fixed;
+	top:19%;
+	left: 0;
+	right: 0;
+	display:flex;
+	width: 80%;
+	height: 70vh;
+	background: #1f1e1e;
+	z-index:100;
+	/* transition: 1s ease; */
+	pointer-events: none;
+	margin: 0 auto;
+	justify-content: center;
+	border-bottom: 3px solid #ece8e8;
+	border-top:3px solid #ece8e8;
+	border-left:3px solid #ece8e8;
+	border-right:3px solid #ece8e8;
 }
 
+.pr2_active .project2{
+	z-index: 100;
+	pointer-events: none;
+}
+.project2_open h2{
+	font-family: "Oxygen",sans-serif;
+	color: #e6e3e3;
+	font-size: 3rem;
+	margin: 3rem;
+	background:linear-gradient(to right, #e91f4b,#e94528);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-style: italic ;
+}
+/* .open_sec1::before{
+	display: none;
+} */
+.pr2_active .project1, 
+.pr2_active .project3,
+.pr2_active .project4,
+.pr2_active .project5,
+.pr2_active .project6{
+	pointer-events: none;
+}
+/*** Project 3 active */
+.project3_open{
+	display: none;
+}
+.pr3_active .project3 .project3_open{
+	position:fixed;
+	top:19%;
+	left: 0;
+	right: 0;
+	display:flex;
+	width: 80%;
+	height: 70vh;
+	background: #1f1e1e;
+	z-index:100;
+	/* transition: 1s ease; */
+	pointer-events: none;
+	margin: 0 auto;
+	justify-content: center;
+	border-bottom: 3px solid #ece8e8;
+	border-top:3px solid #ece8e8;
+	border-left:3px solid #ece8e8;
+	border-right:3px solid #ece8e8;
+}
 
+.pr3_active .project3{
+	z-index: 100;
+	pointer-events: none;
+}
+.project3_open h2{
+	font-family: "Oxygen",sans-serif;
+	color: #e6e3e3;
+	font-size: 3rem;
+	margin: 3rem;
+	background:linear-gradient(to right, #e91f4b,#e94528);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-style: italic ;
+}
+/* .open_sec1::before{
+	display: none;
+} */
+.pr3_active .project1, 
+.pr3_active .project2,
+.pr3_active .project4,
+.pr3_active .project5,
+.pr3_active .project6{
+	pointer-events: none;
+}
 
+/*** Project 4 active */
+.project4_open{
+	display: none;
+}
+.pr4_active .project4 .project4_open{
+	position:fixed;
+	top:19%;
+	left: 0;
+	right: 0;
+	display:flex;
+	width: 80%;
+	height: 70vh;
+	background: #1f1e1e;
+	z-index:100;
+	/* transition: 1s ease; */
+	pointer-events: none;
+	margin: 0 auto;
+	justify-content: center;
+	border-bottom: 3px solid #ece8e8;
+	border-top:3px solid #ece8e8;
+	border-left:3px solid #ece8e8;
+	border-right:3px solid #ece8e8;
+}
+
+.pr4_active .project4{
+	z-index: 100;
+	pointer-events: none;
+}
+.project4_open h2{
+	font-family: "Oxygen",sans-serif;
+	color: #e6e3e3;
+	font-size: 3rem;
+	margin: 3rem;
+	background:linear-gradient(to right, #e91f4b,#e94528);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-style: italic ;
+}
+/* .open_sec1::before{
+	display: none;
+} */
+.pr4_active .project1, 
+.pr4_active .project2,
+.pr4_active .project3,
+.pr4_active .project5,
+.pr4_active .project6{
+	pointer-events: none;
+}
+
+/*** Project 5 active */
+.project5_open{
+	display: none;
+}
+.pr5_active .project5 .project5_open{
+	position:fixed;
+	top:19%;
+	left: 0;
+	right: 0;
+	display:flex;
+	width: 80%;
+	height: 70vh;
+	background: #1f1e1e;
+	z-index:100;
+	/* transition: 1s ease; */
+	pointer-events: none;
+	margin: 0 auto;
+	justify-content: center;
+	border-bottom: 3px solid #ece8e8;
+	border-top:3px solid #ece8e8;
+	border-left:3px solid #ece8e8;
+	border-right:3px solid #ece8e8;
+	
+}
+
+.pr5_active .project5{
+	z-index: 100;
+	pointer-events: none;
+}
+.project5_open h2{
+	font-family: "Oxygen",sans-serif;
+	color: #e6e3e3;
+	font-size: 3rem;
+	margin: 3rem;
+	background:linear-gradient(to right, #e91f4b,#e94528);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-style: italic ;
+}
+/* .open_sec1::before{
+	display: none;
+} */
+.pr5_active .project1, 
+.pr5_active .project2,
+.pr5_active .project3,
+.pr5_active .project4,
+.pr5_active .project6{
+	pointer-events: none;
+}
+/*** Project 6 active */
+.project6_open{
+	display: none;
+}
+.pr6_active .project6 .project6_open{
+	position:fixed;
+	top:19%;
+	left: 0;
+	right: 0;
+	display:flex;
+	width: 80%;
+	height: 70vh;
+	background: #1f1e1e;
+	z-index:100;
+	/* transition: 1s ease; */
+	pointer-events: none;
+	margin: 0 auto;
+	justify-content: center;
+	border-bottom: 3px solid #ece8e8;
+	border-top:3px solid #ece8e8;
+	border-left:3px solid #ece8e8;
+	border-right:3px solid #ece8e8;
+}
+
+.pr6_active .project6{
+	z-index:100;
+	pointer-events: none;
+}
+.project6_open h2{
+	font-family: "Oxygen",sans-serif;
+	color: #e6e3e3;
+	font-size: 3rem;
+	margin: 3rem;
+	background:linear-gradient(to right, #e91f4b,#e94528);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-style: italic ;
+}
+/* .open_sec1::before{
+	display: none;
+} */
+.pr6_active .project1, 
+.pr6_active .project2,
+.pr6_active .project3,
+.pr6_active .project5,
+.pr6_active .project4{
+	pointer-events: none;
+}
 
 /**------------Section4 close-------------------->*/
 
@@ -790,8 +1059,8 @@ div[data-scroll="in"] #skill-bar5{
 }
 nav[data-scroll = "out"] #scroll_up{
 	position: fixed;
-	z-index: 10;
-	display: block;
+	z-index: ;
+	display: inline-block;
 	bottom: 10%;
 	right: 4%;
 	background:linear-gradient(to right, #f50d3f,#f33514);
