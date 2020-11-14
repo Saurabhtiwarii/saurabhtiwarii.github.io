@@ -876,12 +876,13 @@ div[data-scroll="in"] .pr1_picture {
 .pr2 .pr2_picture img{
 	width: 36rem;
 	border-radius: .5rem;
+	
 }
 .pr2_picture{
 	padding: 3rem;
 	/* border: 1px solid rgb(255, 14, 14); */
 	display: inline-block;
-	background: linear-gradient(to bottom,#178340,#46eee0);
+	background: linear-gradient(to bottom,#188843,#2d9990);
 	border-radius:.8rem ;
 	box-shadow: 5px 5px 35px #1d1d1d;
 	position: sticky;
