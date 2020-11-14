@@ -619,7 +619,7 @@ div[data-scroll="in"] #skill-bar5{
 	align-items: center;
 	/* justify-content: center; */
 	/* z-index: 0; */
-	 background: linear-gradient(65deg,#3b3b3b 40%,#1d1d1d 40%);
+	 background: linear-gradient(65deg,#891d97 40%,#1d1d1d 40%);
 
 	 
 }
@@ -628,7 +628,7 @@ div[data-scroll="in"] #skill-bar5{
 	font-size: 4rem;
 	font-family: "Oxygen",sans-serif;
 	font-weight: 700;
-	background:linear-gradient(to right, #ee1846,#f13716);
+	background:linear-gradient(to right, #be3917,#f13716);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color:transparent;
 	/* -webkit-text-stroke: .5px #000000; */
@@ -831,7 +831,7 @@ div[data-scroll="in"] .pr1_picture {
 	}
 	.pr1 .pr1_picture{
 		padding: 1.5rem;
-		width: 80%;
+		width: 90%;
 		margin: 0 auto;
 	}
 	.pr1_desc h2{
@@ -843,6 +843,10 @@ div[data-scroll="in"] .pr1_picture {
 	.pr1_desc{
 		width: 100%;
 		text-align: left;
+	}
+	.pr_link{
+		color: #e6e3e3;
+		background: #3340f0;
 	}
 }
 /** -----------Project 1 close ---------------*/
@@ -856,7 +860,7 @@ div[data-scroll="in"] .pr1_picture {
 }
 nav[data-scroll = "out"] #scroll_up{
 	position: fixed;
-	z-index: ;
+	z-index:10 ;
 	display: inline-block;
 	bottom: 10%;
 	right: 4%;
