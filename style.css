@@ -769,7 +769,6 @@ div[data-scroll="in"] .pr1_picture {
 	display: inline-block;
 	position: relative;
 	transition: background .6s ease;
-	z-index: 1000;
 	letter-spacing: .1rem;
 	text-align: center;
 }
@@ -779,7 +778,7 @@ div[data-scroll="in"] .pr1_picture {
 	
 }
 @media screen and (max-width:1170px){
-	.pr1_desc h2{
+	.pr1_desc h2, .pr2_desc h2{
 		font-size: 2.6rem;
 	}
 	.pr_link{
@@ -787,21 +786,22 @@ div[data-scroll="in"] .pr1_picture {
 		font-size: 1.6rem;
 	}
 
+
 }
 @media screen and (max-width:1074px){
-	.pr1 .pr1_picture img{
+	.pr1 .pr1_picture img , .pr2 .pr2_picture img{
 		width: 30rem;
 	}
-	.pr1_desc h2{
+	.pr1_desc h2, .pr2_desc h2 {
 		font-size: 2rem;
 	}
-	.pr1_tech h3{
+	.pr1_tech h3, .pr2_tech h3 {
 		font-size: 1.8rem;
 	}
-	.pr1_desc>p{
+	.pr1_desc>p, .pr2_desc>p{
 		font-size: 1.2rem;
 	}
-	.pr1_tech p{
+	.pr1_tech p, .pr2_tech p{
 		font-size: 1.2rem;
 	}
 	.pr_link{
@@ -810,10 +810,10 @@ div[data-scroll="in"] .pr1_picture {
 	}
 }
 @media screen and (max-width:830px){
-	.pr1_desc h2{
+	.pr1_desc h2, .pr2_desc h2{
 		font-size: 1.8rem;
 	}
-	.pr1_desc>p{
+	.pr1_desc>p, .pr2_desc>p{
 		font-size: 1rem;
 	}
 	.pr1 .pr1_picture img{
@@ -825,6 +825,9 @@ div[data-scroll="in"] .pr1_picture {
 		display: flex;
 		flex-direction: column;
 		margin: 0 auto;
+	}
+	.pr2{
+		flex-wrap: wrap;
 	}
 	.pr1 .pr1_picture img{
 		width: 100%;
@@ -851,7 +854,183 @@ div[data-scroll="in"] .pr1_picture {
 }
 /** -----------Project 1 close ---------------*/
 
+/** ------------Project 2----------------------*/
+.pr2{
+	width: 80%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: row-reverse;
+	margin-top: 8rem;
+	
+}
+.pr2_border{
+	position: relative;
+	perspective: 390px;
+	/* border: 1px solid black; */
+	background: transparent;
+	margin: 4.5rem 0;
+	display: flex;
+} 		
+.pr2 .pr2_picture img{
+	width: 36rem;
+	border-radius: .5rem;
+}
+.pr2_picture{
+	padding: 3rem;
+	/* border: 1px solid rgb(255, 14, 14); */
+	display: inline-block;
+	background: linear-gradient(to bottom,#178340,#46eee0);
+	border-radius:.8rem ;
+	box-shadow: 5px 5px 35px #1d1d1d;
+	position: sticky;
+	/* transform: rotateY(-20deg); */
+	transform-style: preserve-3d;
+}
+div[data-scroll="in"] .pr2_picture {
+	animation: pr2_anm 2s linear;
+	transform: rotateY(-20deg);
+}
+@keyframes pr2_anm{
+	0%{
+		transform: rotateY(0deg);
+	}
+	10%{
+		transform: rotateY(-2deg);
+	}
+	20%{
+		transform: rotateY(-4deg);
+	}
+	30%{
+		transform: rotateY(-6deg);
+	}
+	40%{
+		transform: rotateY(-8deg);
+	}
+	50%{
+		transform: rotateY(-10deg);
+	}
+	60%{
+		transform: rotateY(-12deg);
+	}
+	70%{
+		transform: rotateY(-14deg);
+	}
+	80%{
+		transform: rotateY(-16deg);
+	}
+	90%{
+		transform: rotateY(-18deg);
+	}
+	100%{
+		transform: rotateY(-20deg);
+	}
+}
+.pr2_desc h2{
+	
+	font-weight: 400;
+	font-size: 3.2rem;
+	color: #ece9e9;
+	line-height: 1.2;
+	
+}
+.pr2_desc h2 span{
+	letter-spacing: .2rem;
+	color: #42cf61;
+}
+.pr2_desc{
+	height: 100%;
+	font-family: "poppins",sans-serif;
+	width: 60%;
+}
+.pr2_desc>p{
+	color: #ece9e9;
+	font-size: 1.6rem;
+	margin: .8rem 0 3rem 0;
+	line-height: 1.2;
+	
+}
 
+.pr2_tech h3{
+	
+	font-size: 2.2rem;
+	color: #ec193c;
+	letter-spacing: .1rem;
+	font-weight: 600;
+	margin-bottom: .8rem;
+	line-height: 1.2;
+}
+.pr2_tech p{
+	font-size:1.6rem;
+	color:#ece9e9;
+
+}
+.pr2_link{
+	border: 2px solid #42cf61;
+	color: #42cf61;
+}
+.pr2_link:hover{
+	background: #37ad50;
+}
+@media screen and (max-width:1078px){
+	.pr2_desc h2{
+		font-size:2.8rem ;
+	}
+	.pr2_picture{
+		padding: 2rem;
+	}
+	.pr2_border .pr2_picture img{
+		width:32rem ;
+	}
+}
+@media screen and (max-width:850px){
+	.pr2_desc h2{
+		font-size:2.5rem ;
+	}
+	.pr2_desc>p{
+		font-size: 1.3rem;
+	}
+	.pr2_tech p{
+		font-size: 1.3rem;
+	}
+	.pr2_border .pr2_picture img{
+		width:28rem ;
+	}
+
+}
+@media screen and (max-width:650px){
+	.pr2{
+		flex-direction: column;
+		margin: 0 auto;
+		align-items: center;
+		margin: 7rem 0;
+	}
+	.pr2 .pr2_picture img{
+		width: 100%;
+	}
+	.pr2 .pr2_picture{
+		padding: 1.5rem;
+		width: 90%;
+		margin: 0 auto;
+	}
+	.pr2_desc h2{
+		font-size: 2.5rem;
+	}
+	.pr2_desc p{
+		font-size: 1.3rem;
+	}
+	.pr2_desc{
+		width: 100%;
+		text-align: left;
+	}
+	.pr2_link{
+		color: #e6e3e3;
+		background: #2c9242;
+		border: none;
+	}
+
+}	
 /**------------Section4 close-------------------->*/
 
 /**-------------Scroll up -----------------*/
