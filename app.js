@@ -16,9 +16,13 @@ window.addEventListener('scroll',function(){
 // scroll animation
 ScrollOut({
    
-    targets : 'section,div,button,a,nav',
+    targets : 'section,div,button,a',
     once:true,
     threshold:0.5
 })
-// project1 active
+ScrollOut({
+    targets : 'nav',
+    once:false,
+    threshold:0.5
+})
 
