@@ -619,7 +619,7 @@ div[data-scroll="in"] #skill-bar5{
 	align-items: center;
 	/* justify-content: center; */
 	/* z-index: 0; */
-	 background: linear-gradient(65deg,#891d97 40%,#1d1d1d 40%);
+	 background: linear-gradient(65deg,#302f35 40%,#1d1d1d 40%);
 
 	 
 }
@@ -860,7 +860,7 @@ div[data-scroll="in"] .pr1_picture {
 }
 nav[data-scroll = "out"] #scroll_up{
 	position: fixed;
-	z-index:10 ;
+	z-index:10;
 	display: inline-block;
 	bottom: 10%;
 	right: 4%;
