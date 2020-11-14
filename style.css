@@ -678,7 +678,7 @@ div[data-scroll="in"] #skill-bar5{
 	transform-style: preserve-3d;
 }
 div[data-scroll="in"] .pr1_picture {
-	animation: pr1_anm 2s linear;
+	animation: pr1_anm 2.5s linear;
 	transform: rotateY(20deg);
 }
 @keyframes pr1_anm{
@@ -890,7 +890,7 @@ div[data-scroll="in"] .pr1_picture {
 	transform-style: preserve-3d;
 }
 div[data-scroll="in"] .pr2_picture {
-	animation: pr2_anm 2s linear;
+	animation: pr2_anm 2.5s linear;
 	transform: rotateY(-20deg);
 }
 @keyframes pr2_anm{
