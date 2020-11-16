@@ -305,7 +305,9 @@ nav{
 
 /* ******************** section 1 **********************/
 .welcome{
+	position: relative;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
@@ -771,10 +773,12 @@ div[data-scroll="in"] .pr1_picture {
 	transition: background .6s ease;
 	letter-spacing: .1rem;
 	text-align: center;
+	transition: transform 500ms ease;
 }
 .pr_link:hover{
 	color: #e6e3e3;
 	background:#3340f0 ;
+	transform: scale(1.04);
 	
 }
 @media screen and (max-width:1170px){
@@ -789,19 +793,19 @@ div[data-scroll="in"] .pr1_picture {
 
 }
 @media screen and (max-width:1074px){
-	.pr1 .pr1_picture img , .pr2 .pr2_picture img{
+	.pr1 .pr1_picture img{
 		width: 30rem;
 	}
-	.pr1_desc h2, .pr2_desc h2 {
+	.pr1_desc h2{
 		font-size: 2rem;
 	}
-	.pr1_tech h3, .pr2_tech h3 {
+	.pr1_tech h3 {
 		font-size: 1.8rem;
 	}
-	.pr1_desc>p, .pr2_desc>p{
+	.pr1_desc>p{
 		font-size: 1.2rem;
 	}
-	.pr1_tech p, .pr2_tech p{
+	.pr1_tech p{
 		font-size: 1.2rem;
 	}
 	.pr_link{
@@ -810,10 +814,10 @@ div[data-scroll="in"] .pr1_picture {
 	}
 }
 @media screen and (max-width:830px){
-	.pr1_desc h2, .pr2_desc h2{
+	.pr1_desc h2{
 		font-size: 1.8rem;
 	}
-	.pr1_desc>p, .pr2_desc>p{
+	.pr1_desc>p{
 		font-size: 1rem;
 	}
 	.pr1 .pr1_picture img{
@@ -879,7 +883,7 @@ div[data-scroll="in"] .pr1_picture {
 	
 }
 .pr2_picture{
-	padding: 3rem;
+	padding: 2.5rem;
 	/* border: 1px solid rgb(255, 14, 14); */
 	display: inline-block;
 	background: linear-gradient(to bottom,#188843,#2d9990);
@@ -987,10 +991,10 @@ div[data-scroll="in"] .pr2_picture {
 }
 @media screen and (max-width:850px){
 	.pr2_desc h2{
-		font-size:2.5rem ;
+		font-size:1.8rem ;
 	}
 	.pr2_desc>p{
-		font-size: 1.3rem;
+		font-size: 1rem;
 	}
 	.pr2_tech p{
 		font-size: 1.3rem;
@@ -1029,6 +1033,9 @@ div[data-scroll="in"] .pr2_picture {
 		color: #e6e3e3;
 		background: #2c9242;
 		border: none;
+	}
+	.pr2_tech h3{
+		font-size:1.8rem ;
 	}
 
 }	
@@ -1083,4 +1090,28 @@ nav[data-scroll = "out"] #scroll_up{
 nav #scroll_up:hover{
 	opacity: 1;
 }
-
+/** Scroll down */
+.scroll_down {
+	display: flex;
+	justify-content: center;
+}
+.scroll_down .fas{
+	font-size: 4rem;
+	color: #ffffff;
+	position: absolute;
+	bottom: 1rem;
+	animation: scroll_down 1s ease infinite;
+	transition: 1s all;
+	
+}
+div[data-scroll="out"] .scroll_down .fas{
+	display: none;
+}
+@keyframes scroll_down{
+	from{
+		bottom: 1rem;
+	}
+	to{
+		bottom: 3rem;
+	}
+}
