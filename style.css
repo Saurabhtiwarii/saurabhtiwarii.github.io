@@ -874,14 +874,14 @@ div[data-scroll="in"] .pr1_picture {
 }
 .pr2_border{
 	position: relative;
-	perspective: 500px;
+	perspective: 460px;
 	/* border: 1px solid black; */
 	background: transparent;
 	margin: 4.5rem 0;
 	display: flex;
 } 		
 .pr2 .pr2_picture img{
-	width: 40rem;
+	width: 45rem;
 	border-radius: .5rem;
 	
 }
