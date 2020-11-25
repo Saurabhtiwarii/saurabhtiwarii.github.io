@@ -468,7 +468,7 @@ nav{
 	font-weight: 400;
 	margin-bottom: 3rem;
 	color: #ece7e7;
-	
+	word-spacing: 1.5px;
 	
 }
 @media screen and (max-width:768px){
