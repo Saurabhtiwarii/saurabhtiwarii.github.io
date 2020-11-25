@@ -3,8 +3,9 @@
 	padding: 0;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
-	
-	
+}
+body{
+	overflow-x:hidden;
 }
 ::selection {
 	color: #d11717;
@@ -326,6 +327,37 @@ nav{
 	font-weight: 400;
 	text-align: center;
 }
+.profile_logo{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	/* margin-bottom:1.5rem ; */
+	z-index: 1;
+}
+.profile_logo img{
+	width: 20%;
+	border-radius: 50%;
+	animation: profileAnimation 500ms linear;
+	/* border: 3px solid #b882f6; */
+	border:3px solid #d9d8da;
+	animation: pulse 2.5s ease infinite;
+}
+@keyframes pulse{
+	0% {
+		transform: scale(.97);
+		box-shadow: 0 0 0 0 rgba(238, 238, 238, 0.945);
+	}
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 18px rgba(255, 255, 255, 0);
+	  }
+	  
+	  100% {
+		transform: scale(0.97);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	  }
+}
+
 
 .welcome .section1 p{
 	    margin-top: 2.5rem;
@@ -347,7 +379,7 @@ nav{
 	display:inline-block;
 	animation: name-animation1 1s forwards;
 } 
-@keyframes name-animation1{
+/* @keyframes name-animation1{
 	from{
 		transform: translateY(-30%);
 		color: #ffffff;
@@ -364,7 +396,7 @@ nav{
 	to{
 		transform: translateX(0%);
 	}
-}
+} */
 /* ** section 1 close*/
 /* ** Responsive */
 @media screen and (max-width:950px){
@@ -422,10 +454,11 @@ nav{
 	display: inline-block;
 }
 .aboutme{
-	width: 80%;
+	width: 75%;
 	height: 80%;
-	padding: 4rem;
-	text-align: start;
+	/* padding: 4rem; */
+	text-align: center;
+	margin: 6rem auto;
 	
 }
 .section2 p{
@@ -435,7 +468,7 @@ nav{
 	font-weight: 400;
 	margin-bottom: 3rem;
 	color: #ece7e7;
-	text-align: start;
+	
 	
 }
 @media screen and (max-width:768px){
@@ -886,7 +919,7 @@ div[data-scroll="in"] .pr1_picture {
 	
 }
 .pr2_picture{
-	padding: 2.5rem;
+	padding: 3rem;
 	/* border: 1px solid rgb(255, 14, 14); */
 	display: inline-block;
 	background: linear-gradient(to bottom,#188843,#2d9990);
