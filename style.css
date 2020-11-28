@@ -521,7 +521,7 @@ nav{
 	margin: 3rem auto;
 	grid-gap: 2rem;
 	display: grid;
-	grid-template-columns: repeat( auto-fit, minmax(13rem, 1fr) );
+	grid-template-columns: repeat( auto-fit, minmax(11rem, 1fr) );
 	align-items: center;
 	align-content: center;
 	/* background: #2a2a2a; */
@@ -701,7 +701,9 @@ div[data-scroll="in"] #skill-bar5{
 	.myskills .fab{
 		font-size: 3rem;
 	}
-	
+	.myskills{
+		width: 90%;
+	}
 }
 
 /**------------Section3 close-------------------->*/
