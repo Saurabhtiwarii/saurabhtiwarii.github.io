@@ -184,8 +184,8 @@ nav{
 	/* background: linear-gradient(60deg, #8d25f5 40%,#c642ff) */
 	background-image: url(image/bg1.png);
 	background-size: cover;
-	/* background-attachment: fixed;
-	scroll-snap-type: mandatory; */
+	background-attachment: fixed;
+	/* scroll-snap-type: mandatory;  */
 	position: relative;
 }
 .welcome::after{
@@ -482,8 +482,61 @@ nav{
 		font-size:1.5rem;
 	}
 }
+.skill1{
+	font-size: 1.6rem;
+	/* border: 1px solid white; */
+	/* height: 8rem; */
+	padding: 1em;
+	text-align: center;
+	font-weight: 400;
+	border-radius: .3rem;
+	background: #2b2a2a;
+	color: white;
+	position: relative;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.skill1 p{
+	font-size: 1.3rem;
+	margin-top: 1rem;
+	color: #f8f8f8;
+	font-weight: 700;
+	letter-spacing: .2rem;
+	
+}
+.fa-html5,.fa-css3-alt,.fa-js-square, .fa-python, .fa-cuttlefish{
+	font-size: 4rem;
+	color: white;
+	/* filter: drop-shadow(0 0 .50rem #c30d0d); */
+}
+.fa-html5{
+	color: #ffffff;
+	
+}
 
+.myskills{
+	width: 78%;
+	margin: 3rem auto;
+	grid-gap: 2rem;
+	display: grid;
+	grid-template-columns: repeat( auto-fit, minmax(13rem, 1fr) );
+	align-items: center;
+	align-content: center;
+	/* background: #2a2a2a; */
+}
 
+.section3 h2{
+	font-size: 4rem;
+	/* color: #ececec; */
+	background:linear-gradient(to right, #f1093c,#f1300e);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 700;
+	margin-top:2rem ;
+	letter-spacing: .1rem;
+}
 /**------------Section-2 close-------------------->*/
 
 /**------------Section-3 ------------------->*/
@@ -495,6 +548,8 @@ nav{
 	justify-content: center;
 	align-items: center;
 	background:#3b3a3a;
+	font-family: 'Oxygen',sans-serif;
+	padding: 3rem;
 	
 }
 .section3 .skills h2{
@@ -642,6 +697,9 @@ div[data-scroll="in"] #skill-bar5{
 @media screen and (max-width:768px){
 	.skills{
 		width: 80%;
+	}
+	.myskills .fab{
+		font-size: 3rem;
 	}
 	
 }
