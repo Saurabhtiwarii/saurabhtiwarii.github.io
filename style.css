@@ -502,9 +502,9 @@ nav{
 	
 }
  @media screen and (max-width:768px){
-	/* .section2 .aboutme h1{
+	.section2 .aboutme h1{
 		font-size: 3rem;
-	} */
+	}
 	
 	.aboutme{
 		width: 85%;
@@ -514,6 +514,11 @@ nav{
 		font-size:1.5rem;
 	}
 
+}
+@media screen and (max-width:768px){
+	.section4 h1{
+		font-size: 3rem !important;
+	}
 }
 @media screen and (max-width:450px){
 	/* .section2 h1{
@@ -643,7 +648,7 @@ nav{
 	background: #2c2c2b;
 }   */
 .section4 h1{
-	margin: 2rem 0;
+	margin: 2rem 0 0 0;
 	letter-spacing: 0.2rem;
 	font-size: 4rem;
 	font-weight: 600;
