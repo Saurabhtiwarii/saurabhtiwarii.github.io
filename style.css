@@ -462,19 +462,18 @@ nav{
 	
 }
 .section2 h1{
-	font-size: 3.5rem;
+	font-size: 4rem;
 	background:linear-gradient(to right, #e41642,#ee4527);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	color: #d11717;
-	font-weight: 700;
-	margin: 2rem 0;
+	font-weight: 600;
+	margin: 2rem 0 0 0;
 	letter-spacing: .2rem;
 	display: inline-block;
 	position: relative;
-
 }
-.section2 h1::after{
+/* .section2 h1::after{
 	position: absolute;
 	content: "";
 	bottom: -6px;
@@ -483,7 +482,7 @@ nav{
 	height: 5px;
 	border-radius: 1rem;
 	background:linear-gradient(to right, #e41642,#ee4527);
-}
+} */
 .aboutme{
 	width: 65%;
 	height: 80%;
@@ -503,6 +502,10 @@ nav{
 	
 }
  @media screen and (max-width:768px){
+	/* .section2 .aboutme h1{
+		font-size: 3rem;
+	} */
+	
 	.aboutme{
 		width: 85%;
 	}
@@ -513,9 +516,9 @@ nav{
 
 }
 @media screen and (max-width:450px){
-	.section2 h1{
+	/* .section2 h1{
 		font-size: 2.8rem;
-	}
+	} */
 	.section2 h1::after{
 		height: 3px;
 	}
@@ -544,6 +547,7 @@ nav{
 	margin: 2em 0 1em 0;
 	font-size: 2.5rem;
 	letter-spacing: .5rem;
+	font-weight: 600;
 	
 }
 .myskills{
@@ -640,12 +644,13 @@ nav{
 }   */
 .section4 h1{
 	margin: 2rem 0;
+	letter-spacing: 0.2rem;
 	font-size: 4rem;
 	font-weight: 600;
 	background:linear-gradient(to right, #e41642,#ee4527);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color:transparent;
-	z-index: 2;
+	/* z-index: 2; */
 	/* -webkit-text-stroke: .5px #000000; */
 }
 /** ----------Porject 1 --------------------*/
