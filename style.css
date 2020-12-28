@@ -389,6 +389,7 @@ nav{
 	letter-spacing: .2rem;
 	display: inline-block;
 	position: relative;
+	margin: 0 0 .5rem 0;
 }
 
 .aboutme{
@@ -400,23 +401,16 @@ nav{
 }
 
 .section2 p{
-	font-size: 2rem;
+	font-size: 1.6rem;
 	color: #d11717;
 	font-weight: 400;
 	color: #ece7e7;
 	line-height: 1.8;
 }
  @media screen and (max-width:768px){
-
-	
 	.aboutme{
 		width: 85%;
 	}
-
-	.section2 p{
-		font-size:1.5rem;
-	}
-
 }
 
 
@@ -496,7 +490,7 @@ nav{
 	flex-wrap: wrap;
 	justify-content:space-evenly;	
 	z-index: 1;
-	margin-top:5rem ;
+	margin-top:5rem;
 	align-items: center;
 	margin-bottom: 10rem;
 }
