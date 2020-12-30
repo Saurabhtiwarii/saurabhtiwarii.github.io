@@ -142,8 +142,7 @@ nav{
 	height: 100vh;
 	width: 100vw;
 	background-image: url(image/bg1.png);
-	background-size: cover;
-	background-attachment: fixed;
+	background-size:cover;
 	position: relative;
 	background-repeat: no-repeat;
 }
@@ -359,24 +358,27 @@ nav{
 
 /**------------Section-2-------------------->*/
 .section2{
-	height: auto;
+	height: 80vh;
 	width: 100vw;
 	background: linear-gradient(to bottom, #000000, #18151d);
-	padding: 5rem 0 8rem 0;
+	/* padding: 5rem 0 0 0; */
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .section2::before{
 	position: absolute;
 	content: '';
-	top: 0;
-	right: 0;
+	bottom: 0;
 	height: 100%;
-	width: 50%;
+	width: 100%;
 	background-image:url('./image/profile_logo.png');
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: cover;
+	/* background-size: cover; */
 	opacity: .1;
+
 }
 .section2 h1{
 	position: relative;
@@ -395,7 +397,6 @@ nav{
 .aboutme{
 	position: relative;
 	width: 65%;
-	height: 80%;
 	text-align: center;
 	margin: 0 auto;
 }
@@ -415,10 +416,11 @@ nav{
 
 
 
-.fa-html5,.fa-css3-alt,.fa-js-square, .fa-python, .fa-cuttlefish, .fa-html5{
-	font-size: 3rem;
-	color: #bebdbd;
+.fa-html5,.fa-css3-alt,.fa-js-square, .fa-python, .fa-cuttlefish{
+	font-size: 5rem;
+	color: #dddada;
 }
+
 .section2 h2{
 	position: relative;
 	color: #bebdbd;
@@ -431,22 +433,18 @@ nav{
 }
 .myskills{
 	position: relative;
-	max-width: 70vw;
 	display: flex;
 	justify-content: space-evenly;
 	margin: 0 auto;
-
+	width: 85%;
 }
 
 /**------------Section-2 close-------------------->*/
 
 /**------------Section-3 ------------------->*/
 @media screen and (max-width:768px){
-	.skills{
-		width: 80%;
-	}
 	.myskills .fab{
-		font-size: 2.5rem;
+		font-size: 4rem;
 	}
 	.myskills{
 		width: 90%;
@@ -465,10 +463,8 @@ nav{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	 background: #191720;
+	 background: #16131C;
 	 padding: 5rem 0 8rem 0;
-	
-	 
 }
 
 .section4 h1{
@@ -498,8 +494,8 @@ nav{
 .pr1, .pr2{
 	width: 40%;
 	/* height: 40rem; */
-	background: #16131C;
-	box-shadow: -1rem 0 3rem #000;
+	background: #1d1925;
+	/* box-shadow: 0 0 3rem #1d1c1c; */
 	border-radius: 2rem;
 	padding: 4rem 3rem;
 }
