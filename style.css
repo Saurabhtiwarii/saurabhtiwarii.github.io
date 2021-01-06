@@ -139,7 +139,7 @@ nav{
 
 
 .welcome{
-	height: 100vh;
+	height: 90vh;
 	width: 100vw;
 	background-image: url(image/bg1.png);
 	background-size:cover;
@@ -151,9 +151,9 @@ nav{
 	position: absolute;
 	top:0px;
 	left:0px;
-	height: 100vh;
+	height: 90vh;
 	width: 100vw;
-	background-color: #000000;
+	background: #000000;
 	opacity: 0.72;
 }
 /*** Hamburger*/
@@ -358,7 +358,7 @@ nav{
 
 /**------------Section-2-------------------->*/
 .section2{
-	height: 80vh;
+	padding: 9rem 0 15rem 0;
 	width: 100vw;
 	background: linear-gradient(to bottom, #000000, #18151d);
 	/* padding: 5rem 0 0 0; */
@@ -418,8 +418,33 @@ nav{
 
 .fa-html5,.fa-css3-alt,.fa-js-square, .fa-python, .fa-cuttlefish{
 	font-size: 5rem;
-	color: #dddada;
+	color: #201729;
+	
 }
+.skill1, .skill2 ,.skill3,.skill4,.skill5{
+	background:linear-gradient(to right, #e41642,#ee4527);
+	border-radius: 50%;
+	height: 6.5rem;
+	width: 6.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.skill1{
+	/* transform: translateY(1rem); */
+}
+.skill2{
+	transform: translateY(5rem);
+}
+.skill3{
+	/* transform: translateY(3rem); */
+}
+.skill4{
+	transform: translateY(5rem);
+}
+
+
 
 .section2 h2{
 	position: relative;
@@ -494,7 +519,7 @@ nav{
 .pr1, .pr2{
 	width: 40%;
 	/* height: 40rem; */
-	background: #1d1925;
+	background: #211c29;
 	/* box-shadow: 0 0 3rem #1d1c1c; */
 	border-radius: 2rem;
 	padding: 4rem 3rem;
