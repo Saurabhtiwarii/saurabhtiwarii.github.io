@@ -386,7 +386,6 @@ nav{
 	background:linear-gradient(to right, #e41642,#ee4527);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	color: #d11717;
 	font-weight: 600;
 	letter-spacing: .2rem;
 	display: inline-block;
@@ -403,7 +402,6 @@ nav{
 
 .section2 p{
 	font-size: 1.6rem;
-	color: #d11717;
 	font-weight: 400;
 	color: #ece7e7;
 	line-height: 1.8;
@@ -418,11 +416,12 @@ nav{
 
 .fa-html5,.fa-css3-alt,.fa-js-square, .fa-python, .fa-cuttlefish{
 	font-size: 5rem;
-	color: #201729;
+	color: #e4e2e5;
 	
 }
 .skill1, .skill2 ,.skill3,.skill4,.skill5{
-	background:linear-gradient(to right, #e41642,#ee4527);
+	background:linear-gradient(to right, #1b1a1b,#313030);
+	box-shadow: 0 0 .2rem #cecccf;
 	border-radius: 50%;
 	height: 6.5rem;
 	width: 6.5rem;
@@ -431,14 +430,9 @@ nav{
 	justify-content: center;
 	position: relative;
 }
-.skill1{
-	/* transform: translateY(1rem); */
-}
+
 .skill2{
 	transform: translateY(5rem);
-}
-.skill3{
-	/* transform: translateY(3rem); */
 }
 .skill4{
 	transform: translateY(5rem);
