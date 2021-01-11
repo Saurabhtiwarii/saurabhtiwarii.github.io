@@ -736,6 +736,9 @@ div[data-scroll="out"] .scroll_down .fas{
 	transform: rotateZ(15deg) rotateX(10deg);
 }
 .mywork-2-img{
+	background-image: url(./image/mywork2.gif);
+}
+.mywork-2-img{
 	transform: rotateZ(-15deg) rotateX(10deg);
 	border:0.5rem solid #a52828;
 }
