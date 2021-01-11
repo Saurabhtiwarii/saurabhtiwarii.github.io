@@ -718,7 +718,7 @@ div[data-scroll="out"] .scroll_down .fas{
 	border-bottom-right-radius: 4rem;
 }
 .mywork-2-img::after{
-	background: #c53434;
+	background: #a52828;
 }
 .mywork-1-img , .mywork-2-img{
 	justify-content: center;
@@ -737,7 +737,7 @@ div[data-scroll="out"] .scroll_down .fas{
 }
 .mywork-2-img{
 	transform: rotateZ(-15deg) rotateX(10deg);
-	border:0.5rem solid #c53434;
+	border:0.5rem solid #a52828;
 }
 .mywork-1-img-wrapper, .mywork-2-img-wrapper{
 	position: relative;
@@ -913,7 +913,7 @@ div[data-scroll="out"] .scroll_down .fas{
 	.mywork-1-img, .mywork-2-img{
 		width: 18rem;
 		height: 36rem;
-		transform: rotateZ(-25deg) rotateX(10deg);
+		transform: rotateZ(0deg) rotateX(0deg);
 	}
 }
 @media (max-width:600px){
