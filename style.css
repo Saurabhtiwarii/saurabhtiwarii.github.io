@@ -916,7 +916,7 @@ div[data-scroll="out"] .scroll_down .fas{
 	.mywork-1-img, .mywork-2-img{
 		width: 18rem;
 		height: 36rem;
-		transform: rotateZ(0deg) rotateX(0deg);
+		transform: rotateZ(-20deg) rotateX(10deg);
 	}
 }
 @media (max-width:600px){
@@ -951,3 +951,19 @@ div[data-scroll="out"] .scroll_down .fas{
 		width: 90%;
 	}
 }
+@media (max-width:370px){
+	.section3{
+		padding:4.5rem;
+	}
+	.mywork-2,
+	.mywork-1{
+		width: 100%;
+	}
+}
+@media (max-width:320px){
+	.section3{
+		padding:3rem;
+	}
+}
+
+
