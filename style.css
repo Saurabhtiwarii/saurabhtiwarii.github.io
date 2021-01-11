@@ -680,7 +680,7 @@ div[data-scroll="out"] .scroll_down .fas{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
+	width: 100vw;
 }
 .section3 h1{
 	text-align: center;
@@ -870,18 +870,18 @@ div[data-scroll="out"] .scroll_down .fas{
 	}
 
 	.mywork-1 .bubble-wrapper{
-		background: linear-gradient(to bottom,#6e36a1,#6d36a1b0,#6d36a16e) ;
+		background: linear-gradient(to right bottom,#6e36a1,#6d36a1b0,#6d36a16e) ;
 	
 	}
 	.mywork-2 .bubble-wrapper{
-		background: linear-gradient(to bottom, #c73030,#c02c2cdc,#be4b4bb6) ;
+		background: linear-gradient(to right bottom, #c73030,#c02c2cdc,#be4b4bb6) ;
 	}
 	.mywork-2,
 	.mywork-1{
 		width: 60%;
 	}
 	.mywork-2::after{
-		background-image: linear-gradient(to right bottom, #570b0b, #7a1010, #a11212, #c0152c, #ff4646);
+		background-image: linear-gradient(to right bottom, #570b0b, #7a1010, #a11212, #b61f34, #d62e2e);
 		transform: rotateZ(0deg);
 	}
 	.mywork-1-img-wrapper,
