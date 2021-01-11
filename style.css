@@ -5,8 +5,9 @@
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
+
 body{
-	overflow-x:hidden;
+	
 	font-family: 'Poppins',sans-serif;
 }
 ::selection {
@@ -14,6 +15,7 @@ body{
 	background:#eeeded;
   }
 html{
+
 	font-size: 62.5%;
 }
 
@@ -448,6 +450,7 @@ nav{
 .section4{
 	width: 100vw;
 	position: relative;
+	overflow-x: hidden;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
