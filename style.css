@@ -871,15 +871,19 @@ div[data-scroll="out"] .scroll_down .fas{
 	
 	}
 	.mywork-2 .bubble-wrapper{
-		background: linear-gradient(to bottom, #be4b4b,#be4b4bdc,#be4b4bb6) ;
+		background: linear-gradient(to bottom, #c73030,#c02c2cdc,#be4b4bb6) ;
 	}
 	.mywork-2,
 	.mywork-1{
 		width: 60%;
 	}
+	.mywork-2::after{
+		background-image: linear-gradient(to right bottom, #570b0b, #7a1010, #a11212, #c0152c, #ff4646);
+		transform: rotateZ(0deg);
+	}
 	.mywork-1-img-wrapper,
 	.mywork-2-img-wrapper{
-		padding-bottom: 3rem;
+		padding-bottom: 1rem;
 	}
 	.mywork-1::after, .mywork-2::after{
 		clip-path: polygon( 100% 100%, 0% 100%,20% 0%, 80% 0%);
@@ -894,7 +898,7 @@ div[data-scroll="out"] .scroll_down .fas{
 		padding: 0 0 5rem 0;
 	}
 	.mywork-1, .mywork-2{
-		padding: 4rem 2rem;
+		padding: 3rem 2rem;
 	}
 	.mywork-1-desc p, .mywork-2-desc p, 
 	.mywork-2-desc h2, 
@@ -906,7 +910,7 @@ div[data-scroll="out"] .scroll_down .fas{
 	.mywork-1-img, .mywork-2-img{
 		width: 18rem;
 		height: 36rem;
-		transform: rotateZ(-30deg) rotateX(10deg);
+		transform: rotateZ(-25deg) rotateX(10deg);
 	}
 }
 @media (max-width:600px){
