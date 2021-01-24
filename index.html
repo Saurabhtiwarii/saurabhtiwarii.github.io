@@ -1,189 +1,220 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	 <meta charset="utf-8">
-	
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<script src="https://kit.fontawesome.com/0589802bb8.js" crossorigin="anonymous"></script>
-
-	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-	
-	<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-	
-	<title>Saurabh Tiwari</title>
-	
-	<link rel="stylesheet" type="text/css" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=false">
+    <script src="https://kit.fontawesome.com/0589802bb8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Saurabh</title>
 </head>
 <body>
-<nav>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">Saurabh</a>
+            </div>
+            <nav>
+                <ul class="nav_links">
+                    <li class="link"><a href="#">Home</a></li>
+                    <li class="link"><a href="#">About</a></li>
+                    <li class="link"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="welcome_section">
+        <div class="section1">
+            <div class="welcome_bg">
+                <!-- <svg  viewBox="0 0 799 689" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0)">
+    <path d="M516.92 624.636C516.92 624.636 512.16 626.266 504.42 628.576C487.31 633.706 455.65 642.216 428.82 643.916C405.72 645.396 386.2 641.836 382.63 626.766C381.1 620.286 383.27 614.956 388 610.576C402.12 597.486 439 592.796 468.25 591.186C476.51 590.736 484.15 590.526 490.51 590.446C501.31 590.306 508.39 590.526 508.39 590.526L508.56 591.186L516.92 624.636Z" fill="#A0616A"/>
+    <path d="M436.99 672.586C418.61 695.346 342.73 647.666 316.19 629.886C310.41 626.016 306.97 623.566 306.97 623.566L331.25 591.186L338.94 580.936C338.94 580.936 345.82 584.586 355.99 590.526C356.36 590.746 356.73 590.966 357.11 591.186C365.88 596.336 376.89 603.066 388 610.576C403.33 620.946 418.83 632.776 428.82 643.916C438.59 654.806 443.08 665.036 436.99 672.586Z" fill="#A0616A"/>
+    <path d="M430.414 214.941C471.027 214.941 503.95 182.018 503.95 141.405C503.95 100.792 471.027 67.869 430.414 67.869C389.801 67.869 356.878 100.792 356.878 141.405C356.878 182.018 389.801 214.941 430.414 214.941Z" fill="#CA9B79"/>
+    <path d="M375.528 178.173C375.528 178.173 389.383 282.616 368.068 294.339C346.754 306.062 494.891 307.128 494.891 307.128C494.891 307.128 461.853 216.54 476.774 188.83L375.528 178.173Z" fill="#CA9B79"/>
+    <path d="M603.063 307.656L590.743 363.756L564.693 482.446L563.913 488.946L554.923 564.196L548.943 614.186L544.933 647.766C520.553 660.296 502.883 668.946 502.883 668.946C502.883 668.946 501.363 661.326 498.913 651.576C481.803 656.706 450.143 665.216 423.313 666.916C433.083 677.806 437.573 688.036 431.483 695.586C413.103 718.346 337.223 670.666 310.683 652.886C310.065 657.143 309.831 661.447 309.983 665.746L289.673 650.126L291.683 614.186L295.073 553.376L299.333 477.116C297.99 473.851 296.864 470.5 295.963 467.086C289.743 444.966 282.193 400.796 276.403 363.756C271.743 333.946 268.243 308.756 267.503 303.396C267.403 302.696 267.353 302.336 267.353 302.336L379.783 252.656C387.773 271.186 425.083 276.756 425.083 276.756C455.993 274.626 480.223 258.326 480.223 258.326L603.063 307.656Z" fill="#C7C1E4"/>
+    <path d="M369.239 71.8467L355.49 66.3423C355.49 66.3423 384.238 34.6915 424.237 37.4438L412.987 25.0586C412.987 25.0586 440.486 14.0498 465.485 42.9482C478.626 58.1394 493.831 75.996 503.31 96.1112H518.035L511.889 109.643L533.398 123.175L511.321 120.744C512.637 128.154 512.839 135.719 511.92 143.189C510.973 150.661 507.16 157.473 501.286 162.187V162.187C501.286 162.187 484.234 126.891 484.234 121.387V135.148C484.234 135.148 470.485 122.763 470.485 114.506L462.985 124.139L459.235 109.002L412.987 124.139L420.487 111.754L391.738 115.883L402.988 100.745C402.988 100.745 370.489 118.635 369.239 133.772C367.989 148.909 358.477 163.253 358.477 163.253C358.477 163.253 332.99 92.4885 369.239 71.8467Z" fill="#2F2E41"/>
+    <path d="M682.993 565.566C675.503 573.686 656.943 585.916 634.443 599.156C626.073 604.076 617.163 609.146 608.073 614.186C586.383 626.216 563.673 638.136 544.933 647.766C520.553 660.296 502.883 668.946 502.883 668.946C502.883 668.946 501.363 661.326 498.913 651.576C495.633 638.526 490.693 621.656 485.543 614.186C485.363 613.926 485.183 613.686 485.003 613.446C483.503 611.476 481.993 610.326 480.503 610.326L554.923 564.196L587.083 544.256L563.913 488.946L534.853 419.566L552.393 363.756L570.023 307.656H603.063C603.063 307.656 614.003 331.536 627.993 364.836C630.083 369.816 632.243 375.006 634.443 380.366C663.223 450.366 699.103 548.116 682.993 565.566Z" fill="#C7C1E4"/>
+    <path d="M350.483 613.526C347.769 613.516 345.059 613.736 342.383 614.186C319.393 618.136 312.613 638.946 310.683 652.886C310.065 657.143 309.831 661.447 309.983 665.746L289.673 650.126L282.273 644.436C264.463 638.226 248.593 627.196 234.833 614.186C222.896 602.7 212.188 590.001 202.883 576.296C193.615 562.788 185.352 548.616 178.163 533.896C176.157 529.788 175.078 525.29 175.004 520.719C174.93 516.148 175.861 511.617 177.733 507.446L202.883 451.396L239.643 369.476C239.913 367.526 240.209 365.619 240.533 363.756C247.823 321.956 267.353 303.396 267.353 303.396H282.273L292.253 363.756L304.653 438.746L295.963 467.086L275.883 532.536L295.073 553.376L350.483 613.526Z" fill="#C7C1E4"/>
+    <path d="M663.41 649.82V655.89C663.413 657.556 663.105 659.208 662.5 660.76C662.231 661.452 661.907 662.121 661.53 662.76C660.338 664.76 658.647 666.417 656.622 667.567C654.597 668.717 652.309 669.321 649.98 669.32H203.43C201.101 669.321 198.813 668.717 196.788 667.567C194.763 666.417 193.072 664.76 191.88 662.76C191.503 662.121 191.179 661.452 190.91 660.76C190.305 659.208 189.997 657.556 190 655.89V649.82C190 648.056 190.347 646.31 191.021 644.68C191.696 643.05 192.685 641.57 193.933 640.323C195.18 639.075 196.66 638.086 198.29 637.411C199.92 636.737 201.666 636.39 203.43 636.39H229.17V633.56C229.17 633.486 229.184 633.414 229.212 633.346C229.241 633.278 229.282 633.216 229.334 633.164C229.386 633.112 229.448 633.07 229.516 633.042C229.584 633.014 229.656 633 229.73 633H243.16C243.234 633 243.306 633.014 243.374 633.042C243.442 633.07 243.504 633.112 243.556 633.164C243.608 633.216 243.65 633.278 243.678 633.346C243.706 633.414 243.72 633.486 243.72 633.56V636.39H252.11V633.56C252.11 633.486 252.124 633.414 252.152 633.346C252.18 633.278 252.222 633.216 252.274 633.164C252.326 633.112 252.388 633.07 252.456 633.042C252.524 633.014 252.596 633 252.67 633H266.1C266.174 633 266.246 633.014 266.314 633.042C266.382 633.07 266.444 633.112 266.496 633.164C266.548 633.216 266.59 633.278 266.618 633.346C266.646 633.414 266.66 633.486 266.66 633.56V636.39H275.06V633.56C275.06 633.486 275.074 633.414 275.102 633.346C275.13 633.278 275.172 633.216 275.224 633.164C275.276 633.112 275.338 633.07 275.406 633.042C275.474 633.014 275.546 633 275.62 633H289.05C289.124 633 289.196 633.014 289.264 633.042C289.332 633.07 289.394 633.112 289.446 633.164C289.498 633.216 289.54 633.278 289.568 633.346C289.596 633.414 289.61 633.486 289.61 633.56V636.39H298V633.56C298 633.486 298.014 633.414 298.042 633.346C298.07 633.278 298.112 633.216 298.164 633.164C298.216 633.112 298.278 633.07 298.346 633.042C298.414 633.014 298.486 633 298.56 633H311.99C312.064 633 312.136 633.014 312.204 633.042C312.272 633.07 312.334 633.112 312.386 633.164C312.438 633.216 312.48 633.278 312.508 633.346C312.536 633.414 312.55 633.486 312.55 633.56V636.39H320.94V633.56C320.94 633.486 320.954 633.414 320.982 633.346C321.01 633.278 321.052 633.216 321.104 633.164C321.156 633.112 321.218 633.07 321.286 633.042C321.354 633.014 321.426 633 321.5 633H334.93C335.004 633 335.076 633.014 335.144 633.042C335.212 633.07 335.274 633.112 335.326 633.164C335.378 633.216 335.42 633.278 335.448 633.346C335.476 633.414 335.49 633.486 335.49 633.56V636.39H343.89V633.56C343.89 633.486 343.904 633.414 343.932 633.346C343.96 633.278 344.002 633.216 344.054 633.164C344.106 633.112 344.168 633.07 344.236 633.042C344.304 633.014 344.376 633 344.45 633H357.88C357.954 633 358.026 633.014 358.094 633.042C358.162 633.07 358.224 633.112 358.276 633.164C358.328 633.216 358.37 633.278 358.398 633.346C358.426 633.414 358.44 633.486 358.44 633.56V636.39H366.83V633.56C366.83 633.486 366.844 633.414 366.872 633.346C366.9 633.278 366.942 633.216 366.994 633.164C367.046 633.112 367.108 633.07 367.176 633.042C367.244 633.014 367.316 633 367.39 633H472.59C472.664 633 472.736 633.014 472.804 633.042C472.872 633.07 472.934 633.112 472.986 633.164C473.038 633.216 473.08 633.278 473.108 633.346C473.136 633.414 473.15 633.486 473.15 633.56V636.39H481.55V633.56C481.55 633.486 481.564 633.414 481.592 633.346C481.62 633.278 481.662 633.216 481.714 633.164C481.766 633.112 481.828 633.07 481.896 633.042C481.964 633.014 482.036 633 482.11 633H495.54C495.688 633.001 495.83 633.061 495.934 633.166C496.039 633.27 496.099 633.412 496.1 633.56V636.39H504.49V633.56C504.49 633.486 504.504 633.414 504.532 633.346C504.561 633.278 504.602 633.216 504.654 633.164C504.706 633.112 504.768 633.07 504.836 633.042C504.904 633.014 504.976 633 505.05 633H518.48C518.554 633 518.627 633.014 518.695 633.042C518.763 633.07 518.824 633.112 518.876 633.164C518.928 633.216 518.97 633.278 518.998 633.346C519.026 633.414 519.04 633.486 519.04 633.56V636.39H527.43V633.56C527.43 633.486 527.444 633.414 527.472 633.346C527.501 633.278 527.542 633.216 527.594 633.164C527.646 633.112 527.708 633.07 527.776 633.042C527.844 633.014 527.917 633 527.99 633H541.42C541.494 633 541.567 633.014 541.635 633.042C541.703 633.07 541.764 633.112 541.816 633.164C541.868 633.216 541.91 633.278 541.938 633.346C541.966 633.414 541.98 633.486 541.98 633.56V636.39H550.38V633.56C550.38 633.486 550.394 633.414 550.422 633.346C550.451 633.278 550.492 633.216 550.544 633.164C550.596 633.112 550.658 633.07 550.726 633.042C550.794 633.014 550.867 633 550.94 633H564.37C564.517 633.002 564.657 633.062 564.76 633.167C564.864 633.272 564.921 633.413 564.92 633.56V636.39H573.32V633.56C573.32 633.486 573.334 633.414 573.362 633.346C573.391 633.278 573.432 633.216 573.484 633.164C573.536 633.112 573.598 633.07 573.666 633.042C573.734 633.014 573.806 633 573.88 633H587.31C587.384 633 587.457 633.014 587.525 633.042C587.593 633.07 587.654 633.112 587.706 633.164C587.758 633.216 587.8 633.278 587.828 633.346C587.856 633.414 587.87 633.486 587.87 633.56V636.39H596.26V633.56C596.26 633.486 596.274 633.414 596.302 633.346C596.331 633.278 596.372 633.216 596.424 633.164C596.476 633.112 596.538 633.07 596.606 633.042C596.674 633.014 596.746 633 596.82 633H610.25C610.324 633 610.397 633.014 610.465 633.042C610.533 633.07 610.594 633.112 610.646 633.164C610.698 633.216 610.74 633.278 610.768 633.346C610.796 633.414 610.81 633.486 610.81 633.56V636.39H649.98C651.744 636.39 653.49 636.737 655.12 637.411C656.75 638.086 658.23 639.075 659.478 640.323C660.725 641.57 661.714 643.05 662.389 644.68C663.063 646.31 663.411 648.056 663.41 649.82V649.82Z" fill="#3F3D56"/>
+    <path d="M784.5 669H68.5C63.8056 669 60 672.806 60 677.5C60 682.194 63.8056 686 68.5 686H784.5C789.194 686 793 682.194 793 677.5C793 672.806 789.194 669 784.5 669Z" fill="#3F3D56"/>
+    <path d="M631.302 404.431H464.859V401H389.388V404.431H222.259C219.273 404.431 216.409 405.617 214.298 407.728C212.186 409.84 211 412.703 211 415.689V643.601C211 646.587 212.186 649.45 214.298 651.562C216.409 653.673 219.273 654.859 222.259 654.859H631.302C634.288 654.859 637.152 653.673 639.263 651.562C641.375 649.45 642.561 646.587 642.561 643.601V415.689C642.561 414.211 642.27 412.747 641.704 411.381C641.138 410.015 640.309 408.774 639.263 407.728C638.218 406.683 636.977 405.853 635.611 405.288C634.245 404.722 632.781 404.431 631.302 404.431Z" fill="#3F3D56"/>
+    <path d="M439 519C452.807 519 464 507.807 464 494C464 480.193 452.807 469 439 469C425.193 469 414 480.193 414 494C414 507.807 425.193 519 439 519Z" stroke="#D0CDE1" stroke-width="2" stroke-miterlimit="10"/>
+    <path d="M431 528C444.807 528 456 516.807 456 503C456 489.193 444.807 478 431 478C417.193 478 406 489.193 406 503C406 516.807 417.193 528 431 528Z" fill="#D0CDE1"/>
+    <path d="M151.86 630.352C152.793 662.302 134.125 674.011 110.697 674.695C110.152 674.711 109.611 674.721 109.071 674.725C107.985 674.733 106.909 674.715 105.844 674.67C84.6552 673.791 67.8834 662.543 67.0156 632.83C66.1176 602.08 104.285 562.127 107.148 559.172L107.153 559.169C107.262 559.056 107.318 559 107.318 559C107.318 559 150.927 598.405 151.86 630.352Z" fill="url(#paint0_linear)"/>
+    <path d="M792.86 626.352C793.793 658.302 775.125 670.011 751.697 670.695C751.152 670.711 750.611 670.721 750.071 670.725C748.985 670.733 747.909 670.715 746.844 670.67C725.655 669.791 708.883 658.543 708.016 628.83C707.118 598.08 745.285 558.127 748.148 555.172L748.153 555.169C748.262 555.056 748.318 555 748.318 555C748.318 555 791.927 594.405 792.86 626.352Z" fill="url(#paint1_linear)"/>
+    </g>
+    <defs>
+    <linearGradient id="paint0_linear" x1="161.266" y1="558.598" x2="67.266" y2="674.598" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#9486E4"/>
+    <stop offset="0.208333" stop-color="#6E64A9" stop-opacity="0.791667"/>
+    <stop offset="0.661458" stop-color="#7B6CCF" stop-opacity="0.338542"/>
+    <stop offset="1" stop-color="#D0CDE1" stop-opacity="0"/>
+    <stop offset="1" stop-color="#C5BEEC" stop-opacity="0.64"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear" x1="802.266" y1="554.598" x2="708.266" y2="670.598" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#9486E4"/>
+    <stop offset="0.208333" stop-color="#6E64A9" stop-opacity="0.791667"/>
+    <stop offset="0.661458" stop-color="#7B6CCF" stop-opacity="0.338542"/>
+    <stop offset="1" stop-color="#D0CDE1" stop-opacity="0"/>
+    <stop offset="1" stop-color="#C5BEEC" stop-opacity="0.64"/>
+    </linearGradient>
+    <clipPath id="clip0">
+    <rect width="798.627" height="689.223" fill="white"/>
+    </clipPath>
+    </defs>
+    </svg> -->
 
-	<div class="navbar">
-		<h2>Saurabh</h2>
-		<ul class="nav_links">
-			<li class="link"><a href="#">Home</a></li>
-			<li class="link"><a href="#aboutme">About</a></li>
-			<li class="link"><a href="#sec_4" >Portfolio</a></li>
-			<li class="link"><a href="#">Contact</a></li>
-		</ul>
+    <img src="./hero-profile.png" alt="">
+            </div>
+        
+            <div class="welcome-section-intro">
+                <h2>Passionate<br><span>Web</span> Developer</h2>
+                <p>Love to explore web world.</p>
+            <a href="#" class="contact-me-btn">Contact Me</a>
+            </div>
+        </div>
+       
+    </section>
 
-		<div class="hamburger">
-			<div class="line"></div>
-			<div class="line"></div>
-			<div class="line"></div>
-		</div>
-		
-	</div>
-	<a href="#sec_1"  id="scroll_up"><i class="fas fa-chevron-up fa-lg"></i></a>
-</nav>
-<!--**     Section-1          -->
-<section class="welcome" id="sec_1">
-	<div class="profile_logo">
-		<img src="image/profile_logo.png" alt="profile_logo">
-	</div>
-	<div class="section1">
-		
-		
-		<h2>Hye I am <span>Saurabh</span> Tiwari</h2>
-		<p>  Engineer <span>|</span> Web Designer <span>|</span> Blogger</p>
-	</div>
+<section class="about-section"> 
+    <div class="section2">
+        <div class="about-me">
+            <h2><span>|</span> About Me</h2>
+            <div class="profile-card">
+                <div class="profile-card-info">
+                    <h3>Saurabh Tiwari</h3>
+                    <p>- Web Developer</p>
+                </div>
+               <div class="my-picture">
+                <img src="picture.png" alt="my picture">
+               </div>
+            
+            </div>
+         
+            <p>
+                I am a fresher pursuing B.Tech (Computer Science). I am a Web enthusiast who is always passionate to learn creative things. I like to challenge myself for every unique idea I had.
+            </p>
+            <!-- <div class="social-icons">
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="far fa-envelope"></i>
+            </div> -->
+           
+        </div>
+        <div class="my-skills">
+            <h2><span>|</span> My Skills</h2>
+            <ul class="skills">
+                <li>
+                  <h3>Front-End</h3> 
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Bootstrap</li>
+                            <li>SASS</li>
+                            <li>GSAP</li>
+                        </ul>
+                </li>
 
-	
+                <li>
+                    <h3>Back-End</h3>
+                        <ul>
+                            <li>Django</li>
+                            <li>PHP</li>
+                            <li>SQL</li>
+                        </ul>
+                </li>
+                
+              
+            </ul>
+            
+        </div>
+    </div>
 </section>
-<!--**------------Section-1 close-------------------->
 
-<!--**------------Section-2-------------------->
 
-<section class="section2" id="aboutme">
-	<div class="aboutme">
-		<h1>About Me</h1>
-		<p>
-			I am a fresher pursuing B.Tech (Computer Science). I am a Web enthusiast who is always passionate to learn creative things. I like to challenge myself for every unique idea I had.  
-			
-		</p>
-		
-	</div>
-	<h2>My Skills</h2>
-		<div class="myskills">
-			<div class="skill1" skill="HTML5">
-				<i class="fab fa-html5"></i>
-				<!-- <p>HTML5</p> -->
-			</div>
-			<div class="skill2">
-				<i class="fab fa-css3-alt"></i>
-				<!-- <p>CSS3</p> -->
-			</div>
-			<div class="skill3">
-				<i class="fab fa-js-square"></i>
-				<!-- <p>JavaScript</p> -->
-			</div>
-			<div class="skill4">
-				<i class="fab fa-python"></i>
-				<!-- <p>Python</p> -->
-			</div>
-			<div class="skill5">
-				<i class="fab fa-cuttlefish"></i>
-				<!-- <p>C Language</p> -->
-			</div>
-		</div>
-</section>
-
-<!--**------------Section-2 close-------------------->
-
-<!--**------------Section-3-------------------->
-<section class="section3">
-	<h1>My Work</h1>
-	<div class="mywork">
-		<div class="mywork-1">
-			<div class="mywork-1-desc">
-				<h2>Weather App</h2>
-				<p>location search enabled web app for daily weather forecast and air quality index.</p>
-				<div class="mywork1-btn">
-				<a  href="https://saurabhtiwarii.github.io/weatherapp/" target="_blank_"><button class="mywork-1-btn1 ">LIVE</button> </a>
-				<a  href="https://saurabhtiwarii.github.io/weatherapp/"><button class="mywork-1-btn2 " >CODE</button> </a>
-				</div>
-				
-			</div>
-				<div class="mywork-1-img-wrapper">
-					<div class="mywork-1-img">
-						<!-- <img src="./image/mywork1.gif"> -->
-					</div>
-				</div>
-
-				<div class="bubble-wrapper">
-
-				</div>
-			
-		</div>
-
-		<div class="mywork-2">
-			<div class="mywork-2-desc">
-				<h2>Covid-Tracker</h2>
-				<p>Corona-Tracker is a live covid-19 tracking web app with location search enabled.</p>
-				<div class="mywork2-btn">
-				<a  href="https://saurabhtiwarii.github.io/weatherapp/covidTracker.html" target="_blank_"><button class="mywork-2-btn1 ">LIVE</button> </a>
-				<a  href="https://saurabhtiwarii.github.io/weatherapp/"><button class="mywork-2-btn2 " >CODE</button> </a>
-				</div>
-			</div>
-				<div class="mywork-2-img-wrapper">
-					<div class="mywork-2-img">
-						<!-- <img src="./image/mywork1.gif"> -->
-					</div>
-				</div>
-				<div class="bubble-wrapper">
-					
-				</div>
-			
-		</div>
-
+<section class="projects-section">
+    <h2>Pro<span>j</span>ects</h2>
+    <div class="projects">
+		<div class="project1 pr">
+            <div class="project1-info">
+                <h3>Weather App</h3>
+                <p>location search enabled web app for daily weather forecast and air quality index.</p>
+                <div class="project1-btn">
+                    <a  href="https://saurabhtiwarii.github.io/weatherapp/" target="_blank_"><button class="project-1-btn1 ">LIVE</button> </a>
+                    <a  href="https://saurabhtiwarii.github.io/weatherapp/"><button class="project-1-btn2 " >CODE</button> </a>
+                    </div>
+            </div>
+            <div class="project-1-img-wrapper">
+                <div class="project-1-img">
+                </div>
+            </div>
+            
+        </div>
+        <div class="project2 pr">
+            <div class="project2-info">
+                <h3>CovidTracker</h3>
+                <p>Corona-Tracker is a live covid-19 tracking web app with location search enabled.</p>
+                <div class="project2-btn">
+                    <a  href="https://saurabhtiwarii.github.io/weatherapp/" target="_blank_"><button class="project-2-btn1 ">LIVE</button> </a>
+                    <a  href="https://saurabhtiwarii.github.io/weatherapp/"><button class="project-2-btn2 " >CODE</button> </a>
+                </div>
+            </div>
+                <div class="project-2-img-wrapper">
+                    <div class="project-2-img">
+                    </div>
+                </div>
+        </div>
+        	
 		
 	</div>
 </section>
 
+<section class="contact-section">
+    <h1>Con<span>t</span>act</h1>
+    <div class="contact-form">
+        <form
+  action="https://formspree.io/f/meqpnrnq"
+  method="POST"
 
+>
+  <label>
+    Your Email
+    <input type="text" name="_replyto" required>
+  </label>
+  <label>
+    Your Message
+    <textarea name="message" rows="4" cols="50" resize="false" required></textarea>
+  </label>
 
-<!--**------------Section-4-------------------->
-<section class="section4" id="sec_4">
-	<h1>Portfolio</h1>
-	<div class="projects">
-		
-		<div class="pr1 pr">
-			
-			<div class="pr1_desc">
-				<h2>Web Project -<br><span>CoronaTracker</span> </h2>
-				
-				<p>CoronaTracker is django web app. 
-					It fetch the real time data from another website 
-					and provide info of covid-19.</p>
-				<a href="https://github.com/Saurabhtiwarii/Corona-Tracker" class="pr_link" target="/">
-					Know More
-					</a>		
-			</div>
-			
-		</div>
-		
-		<div class="pr2 pr">
-			
-			<div class="pr2_desc">
-				<h2>Python Game -<br><span>Snake-Mania</span> </h2>
-				
-				<p>Snake-mania is a snake game made with pygame library where snake have to eat food to grow and score.</p>
+  <!-- your other form fields go here -->
 
-				<a href="https://github.com/Saurabhtiwarii/Snake-Mania" class="pr_link pr2_link" target="/">
-					Know More
-					</a>
-			</div>
-		</div>
-	</div>
-			
-		
+  <button type="submit" class="submit">Send</button>
+</form>
+    </div>
 
 </section>
-<!--**------------Section-4 close-------------------->
-<script src="scroll-out.js"></script>
-<script src="app.js">
-</script>
+<footer>
+    <div class="footer-content">
+        <ul class="nav_links">
+            <li class="link"><a href="#">Home</a></li>
+            <li class="link"><a href="#">About</a></li>
+            <li class="link"><a href="#">Contact</a></li>
+        </ul>
+        <div class="social-icons">
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="far fa-envelope"></i>
+        </div>
+     
+       
+    </div>
+  
+</footer>
+
 
 </body>
 </html>
