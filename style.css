@@ -586,6 +586,9 @@ footer .footer-content h2{
     html{
         font-size: 44%;
     }
+    .welcome_bg::after{
+        top: -25px;
+    } 
     .section1{
         flex-direction: column;
     }
@@ -635,20 +638,16 @@ footer .footer-content h2{
     }
 }
 @media (max-width:400px){
-    html{
-        font-size: 36%;
-    }
     .welcome_bg{
         width: 35rem;
         height: 35rem;
     }
+   
 }
 @media (max-width:360px){
     .welcome_bg{
         width: 30rem;
         height: 30rem;
     }
-    .welcome_bg::after{
-        height: 80%;
-    }
+    
 }
