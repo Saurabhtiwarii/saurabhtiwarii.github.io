@@ -630,7 +630,7 @@ footer .footer-content h2{
 
 @media (max-width:650px){
     html{
-        font-size: 40%;
+        /* font-size: 42%; */
     }
 }
 @media (max-width:500px){
