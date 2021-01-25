@@ -84,29 +84,14 @@ html{
 }
 .welcome_bg{
     height: 40rem;
-    /* overflow: hidden; */
     width: 40rem;
-    /* padding-bottom: 8rem; */
     border-radius: 50%;
     display: flex;
     justify-content: center;
     position: relative;
     background: linear-gradient(to right,#6863a5 10%,#000000 60%);
-    /* border-bottom:1rem solid #7d75c8;
-    border-top:1rem solid #7d75c8; */
 }
-/* .welcome_bg::after{
-    content: '';
-    position: absolute;
-    width: 200%;
-    height: 50%;
-    top: 0;
-    background: #5d579b;
-    transform: rotateZ(90deg);
-    border-radius: 50%;
-    animation: move 4s infinite alternate-reverse;
-    top: -50px;
-} */
+
 
 @keyframes move{
     0%{
@@ -591,15 +576,16 @@ footer .footer-content h2{
         font-size: 48%;
     }
 }
-@media (max-width:850px){
-    html{
-        font-size: 44%;
-    }
-}
+
 @media (max-width:750px){
     html{
         font-size: 44%;
     }
+    .welcome_bg{
+        width: 35rem;
+        height: 35rem;
+    }
+   
     .welcome_bg::after{
         top: -25px;
     } 
@@ -646,19 +632,56 @@ footer .footer-content h2{
     .nav_links .link:not(:last-child){
         margin-right: 2.5rem;
     }
-}
-@media (max-width:400px){
-    .welcome_bg{
-        width: 35rem;
-        height: 35rem;
-    }
-   
-}
-@media (max-width:360px){
     .welcome_bg{
         width: 30rem;
         height: 30rem;
     }
+}
+@media (max-width:400px){
+    .welcome_bg{
+        width: 28rem;
+        height: 28rem;
+    }
+    html{
+        font-size: 42%;
+    }
+    
+   
+}
+@media (max-width:360px){
+    .welcome_bg{
+        width: 25rem;
+        height: 25rem;
+    }
+    html{
+        font-size: 38%;
+    }
     
 }
+@media (max-width:330px){
+    .welcome_bg{
+        width: 25rem;
+        height: 25rem;
+    }
+    html{
+        font-size: 38%;
+    }
+
+    .nav_links .link:not(:last-child){
+        margin-right: 1.5rem;
+    }
+    
+}
+
+@media (max-width:280px){
+    .welcome_bg{
+        width: 20rem;
+        height: 20rem;
+    }
+    html{
+        font-size: 35%;
+    }
+    
+}
+
 
