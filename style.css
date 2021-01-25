@@ -269,7 +269,7 @@ html{
 }
 .about-me p{
     padding:3rem 2rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 600;
     line-height: 2;
     color: #2c294e;
@@ -409,7 +409,7 @@ html{
 }
 .project1-info p,
 .project2-info p{
-    font-size: 1.8rem;
+    font-size: 2rem;
     padding: 1rem 0 2rem 0;
 }
 project1-btn{
@@ -432,6 +432,10 @@ project1-btn{
 .project-1-btn2{
 	background: #f0edf1;
 	color:#4c0e75;
+}
+.project-2-btn2{
+    background: #f0edf1;
+	color:#ff4646;
 }
 .project-2-btn1{
     background: #ff4646;
