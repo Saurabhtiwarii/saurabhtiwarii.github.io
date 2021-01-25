@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=false">
     <script src="https://kit.fontawesome.com/0589802bb8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Saurabh</title>
 </head>
 <body>
@@ -25,7 +26,8 @@
     
     <section class="welcome_section">
         <div class="section1">
-            <div class="welcome_bg">
+            <div class="img-border">
+            <div class="welcome_bg" data-aos="fade-up" >
                 <!-- <svg  viewBox="0 0 799 689" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g clip-path="url(#clip0)">
     <path d="M516.92 624.636C516.92 624.636 512.16 626.266 504.42 628.576C487.31 633.706 455.65 642.216 428.82 643.916C405.72 645.396 386.2 641.836 382.63 626.766C381.1 620.286 383.27 614.956 388 610.576C402.12 597.486 439 592.796 468.25 591.186C476.51 590.736 484.15 590.526 490.51 590.446C501.31 590.306 508.39 590.526 508.39 590.526L508.56 591.186L516.92 624.636Z" fill="#A0616A"/>
@@ -67,8 +69,9 @@
 
     <img src="./hero-profile.png" alt="">
             </div>
+        </div>
         
-            <div class="welcome-section-intro">
+            <div class="welcome-section-intro" data-aos="zoom-out-up">
                 <h2>Passionate<br><span>Web</span> Developer</h2>
                 <p>Love to explore web world.</p>
             <a href="#contactme" class="contact-me-btn">Contact Me</a>
@@ -109,7 +112,7 @@
                 <li>
                   <h3>Front-End</h3> 
                         <ul>
-                            <li>HTML</li>
+                            <li >HTML</li>
                             <li>CSS</li>
                             <li>JavaScript</li>
                             <li>Bootstrap</li>
@@ -138,7 +141,7 @@
 <section class="projects-section">
     <h2>Pro<span>j</span>ects</h2>
     <div class="projects">
-		<div class="project1 pr">
+		<div class="project1 pr" data-aos="fade-up" data-aos-offset="250" data-aos-once="true">
             <div class="project1-info">
                 <h3>Weather App</h3>
                 <p>location search enabled web app for daily weather forecast and air quality index.</p>
@@ -153,7 +156,7 @@
             </div>
             
         </div>
-        <div class="project2 pr">
+        <div class="project2 pr" data-aos="fade-up" data-aos-once="true">
             <div class="project2-info">
                 <h3>CovidTracker</h3>
                 <p>Corona-Tracker is a live covid-19 tracking web app with location search enabled.</p>
@@ -214,6 +217,17 @@
     </div>
   
 </footer>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init({
+    offset: 120,
+    duration:1000,
+});
+
+
+</script>
 
 
 </body>

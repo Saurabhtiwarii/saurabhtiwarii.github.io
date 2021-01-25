@@ -83,49 +83,55 @@ html{
 }
 .welcome_bg{
     height: 40rem;
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 40rem;
     /* padding-bottom: 8rem; */
     border-radius: 50%;
     display: flex;
     justify-content: center;
     position: relative;
-    background: #000000;
-    border-bottom:1rem solid #7d75c8;
-    border-top:1rem solid #7d75c8;
+    background: linear-gradient(to right,#6863a5 10%,#000000 60%);
+    /* border-bottom:1rem solid #7d75c8;
+    border-top:1rem solid #7d75c8; */
 }
-.welcome_bg::after{
+/* .welcome_bg::after{
     content: '';
     position: absolute;
-    width: 120%;
-    height: 60%;
-    bottom: 0;
-    background: #f6f3f3;
-    transform: rotateZ(180deg);
+    width: 200%;
+    height: 50%;
+    top: 0;
+    background: #5d579b;
+    transform: rotateZ(90deg);
     border-radius: 50%;
     animation: move 4s infinite alternate-reverse;
     top: -50px;
-
-}
+} */
 
 @keyframes move{
     0%{
-        transform: rotateZ(160deg);
+        transform: rotateZ(130deg);
     }
     50%{
-        transform: rotateZ(185deg);
+        transform: rotateZ(190deg);
     }
     100%{
         transform: rotateZ(180deg);
     }
 }
+.img-border{
+    padding: 2rem;
+    border-left:1rem solid #7d75c8;
+    border-right:1rem solid #7d75c8;
+    border-radius: 50%;
+}
 .welcome_bg img{
     position: absolute;
-    width: 50%;
+    width: 60%;
     bottom: 0;
-    filter: grayscale(100%);
+    filter: grayscale(50%);
     z-index: 1;
-
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
 }
 /* .welcome_bg svg{
     width: 100%;
@@ -654,3 +660,4 @@ footer .footer-content h2{
     }
     
 }
+
