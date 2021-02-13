@@ -559,6 +559,12 @@ footer .footer-content h2{
     color: #504b7e;
 }
 
+@media (max-width:3000px){
+    html{
+        font-size: 68%;
+    }
+}
+
 @media (max-width:2000px){
     html{
         font-size: 65%;
